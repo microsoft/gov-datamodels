@@ -1,4 +1,4 @@
-# Government Data Models – Core: A Foundation for Federal Power Platform Apps
+# Core: A Foundation Data Model for Federal Power Platform Apps
 
 When building government applications on the Power Platform, one of the biggest challenges is that so many projects start from scratch, even when they share the same underlying data needs. Whether you’re working on case management, grants, compliance, HR, or procurement, there is a recurring set of tables, fields, and relationships that almost every app will need. The Government Data Models – Core module is designed to solve this problem by providing a shared, reusable backbone of common entities that federal agencies can build on, saving time while improving consistency across solutions.
 

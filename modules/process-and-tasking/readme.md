@@ -1,4 +1,4 @@
-# Government Data Models - Process and Tasking: A Data Model for Government Workflow Automation
+# Process and Tasking: A Data Model for Government Workflow Automation
 
 The Process and Tasking module is designed to bring structure, visibility, and automation to complex government workflows. Many federal programs depend on repeatable processes—whether they involve onboarding staff, approving grants, reviewing compliance submissions, or managing public requests. While these processes often differ in content, they share a common pattern: a series of steps that need to be followed, tracked, and completed against specific cases, requests, or records. This module provides a standardized way to model those processes and the tasks they generate, enabling agencies to automate workflows and monitor progress across programs.
 

@@ -4,7 +4,7 @@ Welcome to the Government Data Model repository. This repository delivers a coll
 
 Browse all available modules [here](modules).
 
-# Co-Designed with Goverment App Templates
+# 🎯 Co-Designed with Government App Templates
 
 This repository, along with the [Government App Templates](https://github.com/microsoft/gov-apptemplates)  repository, are designed to work together as a modular, layered foundation for building government solutions on Microsoft Dataverse and the Power Platform.
 
@@ -26,7 +26,7 @@ Keeping these in separate repositories offers several benefits:
 
 By using both together, agencies get a consistent, governed data layer plus a set of deployable, mission-focused apps that can be adapted quickly and maintained over time.
 
-## Contributing
+## 🛠️ Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
@@ -42,7 +42,7 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 We are working on integrating the full unpacked solution files for a more direct contribution experience. Check back for updates for availability.
 
-## Trademarks
+## ™️ Trademarks
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
 trademarks or logos is subject to and must follow

@@ -1,14 +1,6 @@
-# Project
+# Goverment Data Model Repository
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
-
-As the maintainer of this project, please make a few updates:
-
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+Welcome to the Government Data Model repository. This repository delivers a collection of standardized, reusable data model solutions for Microsoft Dataverse, purpose-built for common government business processes. Each module defines entities, relationships, and field specifications that align with public-sector needs at the federal, state, and local levels. By adopting these models, agencies and solution builders can accelerate Power Platform and Dynamics 365 deployments, ensure data consistency across programs, and reduce the cost of custom schema development. Whether you are building grants management, case tracking, permitting, or other civic solutions, these modules provide a ready-to-use foundation that is extensible, interoperable, and maintained under an open MIT license.
 
 ## Contributing
 

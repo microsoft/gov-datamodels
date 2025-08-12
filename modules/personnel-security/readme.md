@@ -20,11 +20,11 @@ By consolidating personnel security data into a single, extensible model, agenci
 
 Install the latest managed version of Government Data Models - Core first.
 
-  - [Gov Data Models - Core](../core/releases/)
+  - [Government Data Models - Core](../core/releases/)
 
-Next, install the latest managed version of Government Data Models - Procesas and Tasking.
+Next, install the latest managed version of Government Data Models - Process and Tasking.
 
-  - [Gov Data Models - Core](../process-and-tasking/releases/)
+  - [Government Data Models - Core](../process-and-tasking/releases/)
 
 # Releases
 

@@ -28,7 +28,7 @@ Install the latest managed version of Government Data Models - Core first.
 
 Next, install the latest managed version of Government Data Models - Process and Tasking.
 
-  - [Government Data Models - Core](../process-and-tasking/releases/)
+  - [Government Data Models - Process and Tasking](../process-and-tasking/releases/)
 
 # Releases
 

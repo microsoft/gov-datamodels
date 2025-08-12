@@ -14,7 +14,7 @@ By separating the blueprint of a process from its execution, and by giving agenc
 
 # Requirements
 
-Install the latest managed version of Gov CDM - Core first.
+Install the latest managed version of Government Data Models - Core first.
 
   - [Government Data Models - Core](../core/releases/)
 

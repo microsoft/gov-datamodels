@@ -1,7 +1,6 @@
 # Government Data Models - Core
 
 # Entity Relationship Diagram
----
 
 ```mermaid
 graph TD
@@ -94,7 +93,6 @@ graph TD
 
 
 # Account
----
 
 **Metadata**
 
@@ -104,7 +102,6 @@ graph TD
 
 
 # Person
----
 
 **Metadata**
 
@@ -138,7 +135,6 @@ graph TD
   - Schema: govcdm_user
 
 # Agreement
----
 
 **Metadata**
 
@@ -187,7 +183,6 @@ graph TD
   - Schema: govcdm_StartDate
 
 # Analysis
----
 
 **Metadata**
 
@@ -224,7 +219,6 @@ graph TD
   - Schema: govcdm_Summary
 
 # Clearance Level
----
 
 **Metadata**
 
@@ -246,7 +240,6 @@ graph TD
   - Schema: govcdm_name
 
 # Competency
----
 
 **Metadata**
 
@@ -268,7 +261,6 @@ graph TD
   - Schema: govcdm_ParentCompetency
 
 # Compliance Framework
----
 
 **Metadata**
 
@@ -296,7 +288,6 @@ graph TD
   - Schema: govcdm_URL
 
 # Compliance Framework Category
----
 
 **Metadata**
 
@@ -315,7 +306,6 @@ graph TD
   - Schema: govcdm_Name
 
 # Compliance Requirement
----
 
 **Metadata**
 
@@ -367,7 +357,6 @@ graph TD
   - Schema: govcdm_URL
 
 # Content Template
----
 
 **Metadata**
 
@@ -380,7 +369,6 @@ graph TD
   - Schema: govcdm_Name
 
 # Country
----
 
 **Metadata**
 
@@ -396,7 +384,6 @@ graph TD
   - Schema: govcdm_name
 
 # Discussion Item
----
 
 **Metadata**
 
@@ -415,7 +402,6 @@ graph TD
   - Schema: govcdm_ParentDiscussionItem
 
 # Document
----
 
 **Metadata**
 
@@ -449,7 +435,6 @@ graph TD
   - Schema: govcdm_VirtualRecordType
 
 # Fiscal Period
----
 
 **Metadata**
 
@@ -468,7 +453,6 @@ graph TD
   - Schema: govcdm_StartDate
 
 # Grade-Rank
----
 
 **Metadata**
 
@@ -490,7 +474,6 @@ graph TD
   - Schema: govcdm_paygrade
 
 # Impact
----
 
 **Metadata**
 
@@ -548,7 +531,6 @@ graph TD
   - Schema: govcdm_TargetMitigationDate
 
 # Job Series
----
 
 **Metadata**
 
@@ -567,7 +549,6 @@ graph TD
   - Schema: govcdm_seriesnumber
 
 # Judicial District
----
 
 **Metadata**
 
@@ -580,7 +561,6 @@ graph TD
   - Schema: govcdm_Name
 
 # Legal Amendment
----
 
 **Metadata**
 
@@ -611,7 +591,6 @@ graph TD
   - Schema: govcdm_SummaryofChange
 
 # Legal Authority
----
 
 **Metadata**
 
@@ -675,7 +654,6 @@ graph TD
   - Schema: govcdm_Tags
 
 # Legal Cross-Reference
----
 
 **Metadata**
 
@@ -697,7 +675,6 @@ graph TD
   - Schema: govcdm_ToLegalAuthority
 
 # Location
----
 
 **Metadata**
 
@@ -737,7 +714,6 @@ graph TD
   - Schema: govcdm_StateorProvince
 
 # Organization Initiative
----
 
 **Metadata**
 
@@ -759,7 +735,6 @@ graph TD
   - Schema: govcdm_parentinitiative
 
 # Organization Unit
----
 
 **Metadata**
 
@@ -790,7 +765,6 @@ graph TD
   - Schema: govcdm_ParentOrganizationUnit
 
 # Organization Unit Type
----
 
 **Metadata**
 
@@ -803,7 +777,6 @@ graph TD
   - Schema: govcdm_name
 
 # Pay Grade
----
 
 **Metadata**
 
@@ -816,7 +789,6 @@ graph TD
   - Schema: govcdm_name
 
 # Personnel Type
----
 
 **Metadata**
 
@@ -829,7 +801,6 @@ graph TD
   - Schema: govcdm_name
 
 # Privacy Consent
----
 
 **Metadata**
 
@@ -848,7 +819,6 @@ graph TD
   - Schema: govcdm_Name
 
 # Product
----
 
 **Metadata**
 
@@ -891,7 +861,6 @@ graph TD
   - Schema: govcdm_UnitofIssue
 
 # Review Approval Decision
----
 
 **Metadata**
 
@@ -934,7 +903,6 @@ graph TD
   - Schema: govcdm_reviewertype
 
 # Risk Item
----
 
 **Metadata**
 
@@ -992,7 +960,6 @@ graph TD
   - Schema: govcdm_TargetMitigationDate
 
 # Signature Approval
----
 
 **Metadata**
 
@@ -1029,7 +996,6 @@ graph TD
   - Schema: govcdm_SignedApprovedDateTime
 
 # State or Province
----
 
 **Metadata**
 
@@ -1048,7 +1014,6 @@ graph TD
   - Schema: govcdm_name
 
 # User
----
 
 **Metadata**
 

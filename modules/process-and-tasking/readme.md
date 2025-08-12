@@ -22,4 +22,4 @@ Install the latest managed version of Gov CDM - Core first.
 
 We highly recommend using the managed versions, which will allow you to easily update and uninstall the solution from your environment. If you need to modify or enhance the managed solution, you can can create a new solution, add the components to that solution and make changes as needed.
 
-  - [Government Data Models- Process-and-Tasking](releases)
+  - [Government Data Models - Process-and-Tasking](releases)

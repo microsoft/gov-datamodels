@@ -50,7 +50,7 @@ trademarks or logos is subject to and must follow
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
 
-# ⚖️ Support 
+## ⚖️ Support 
 
 The modules in this repository are provided **“as is”** without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.
 

@@ -1,7 +1,5 @@
 # Government Data Models - Core
 
-[[_TOC_]]
-
 # Releases
 ---
 

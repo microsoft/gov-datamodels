@@ -2,29 +2,7 @@
 
 Welcome to the Government Data Model repository. This repository delivers a collection of standardized, reusable data model solutions for Microsoft Dataverse, purpose-built for common government business processes. Each module defines entities, relationships, and field specifications that align with public-sector needs at the federal, state, and local levels. By adopting these models, agencies and solution builders can accelerate Power Platform and Dynamics 365 deployments, ensure data consistency across programs, and reduce the cost of custom schema development. Whether you are building grants management, case tracking, permitting, or other civic solutions, these modules provide a ready-to-use foundation that is extensible, interoperable, and maintained under an open MIT license.
 
-Browse all available modules [here](modules).
-
-## 🎯 Co-Designed with Government App Templates
-
-This repository, along with the [Government App Templates](https://github.com/microsoft/gov-apptemplates)  repository, are designed to work together as a modular, layered foundation for building government solutions on Microsoft Dataverse and the Power Platform.
-
-- gov-datamodels provides the standardized, reusable data models — entities, relationships, and field specifications — that define the structure and semantics of common government business processes.
-
-- gov-apptemplates provides the ready-to-deploy applications built on top of those models, delivering preconfigured forms, views, dashboards, automation, and business logic.
-
-Keeping these in separate repositories offers several benefits:
-
-- Clear separation of governance and reusability – Data models can evolve under their own governance rules, without being tied to specific app release cycles.
-
-- Independent versioning – You can update a data model without republishing every app, and vice versa.
-
-- Wider reusability – Other apps (internal or third-party) can consume the standardized models without needing to adopt the provided app templates.
-
-- Simpler contribution paths – Developers can contribute to either the shared data foundation or the application layer based on their expertise.
-
-- Better lifecycle management – Agencies can standardize data schemas across multiple solutions while tailoring applications to their unique mission needs.
-
-By using both together, agencies get a consistent, governed data layer plus a set of deployable, mission-focused apps that can be adapted quickly and maintained over time.
+We hightly recommend you use the [Government Low-code Open-source Workforce Solutions](https://microsoft.github.io/gov-solutions/data-models/) docs site to browse, understand, and download the data models from this repository.
 
 ## 🛠️ Contributing
 

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="govcdm_generalcategory" localizedName="General Category" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.7</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="General Category" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="166840011" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Access Control &amp; Identity Management" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840010" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Asset &amp; Logistics Management" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840002" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Compliance &amp; Regulatory" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Cybersecurity" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840001" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Data Privacy &amp; Protection" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840009" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Environmental Compliance" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840015" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Ethics &amp; Governance" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840003" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Financial Management" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840019" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Foreign Interests" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840008" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Health &amp; Safety" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840006" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Human Resources &amp; Workforce" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840013" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Incident &amp; Disaster Response" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840017" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Information Management &amp; Records" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840018" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="National Security" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840004" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Operational Resilience" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840007" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Procurement &amp; Contract Management" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840014" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Public Relations &amp; Communication" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840005" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Risk Management" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840012" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Technology &amp; Innovation" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840016" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Training &amp; Development" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

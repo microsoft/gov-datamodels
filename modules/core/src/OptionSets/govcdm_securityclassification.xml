@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="govcdm_securityclassification" localizedName="Security Classification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Security Classification" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="166840000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Confidential" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="166840001" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Law Enforcement Sensitive" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="166840002" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Sensitive But Unclassified (SBU)" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="166840003" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Secret" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="166840004" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Secret / SCI" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="166840005" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Top Secret" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="166840006" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Top Secret / SCI" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="166840007" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Unclassified" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="166840008" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Unclassified / Limited Official Use" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

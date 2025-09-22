@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25081.260" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25081.260" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25081.00260">
+  <SolutionManifest>
+    <UniqueName>govcdm_personnelsecurity</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Gov CDM - Personnel Security" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.1.0</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>microsoftgovcdm</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft Government Common Data Model" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="microsoftgovcdm" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>govcdm</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>16684</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_document" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_location" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_organizationunit" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_personalinformation" behavior="2" />
+      <RootComponent type="1" schemaName="govcdm_personneladjudication" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_personnelbackgroundinvestigation" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_personnelbadgerequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_personnelclearance" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_personnelcvtrigger" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_personnelforeigncontact" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_personnelforeigntravel" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_personnelpassport" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_personnelphysicalcredential" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_personnelreportablelifeevent" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_personnelvisitorrequest" behavior="0" />
+      <RootComponent type="1" schemaName="systemuser" behavior="1" />
+      <RootComponent type="61" schemaName="govcdm_personneladjudicationicon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_personnelbackgroundinvestigationicon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_personnelforeigncontacticon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_personnelforeigntravelicon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_personnelpassporticon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_personnelphysicalcredentialicon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_personnelreportablelifeeventicon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_personnelvisitorrequesticon" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_backgroundinvestigationtype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_intelligencesource" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_passporttype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_personneladjudicationtype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_personnelsecurityeventtype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_physicalcredentialtype" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_document" displayName="Document" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_document" displayName="Document" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_location" displayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_personalinformation" displayName="Personal Information" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_personalinformation" displayName="Personal Information" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_personalinformation" displayName="Personal Information" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_backgroundinvestigation" displayName="Background Investigation" parentSchemaName="govcdm_personalinformation" parentDisplayName="Personal Information" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_document" parentDisplayName="Document" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_personneladjudication_DecisionDocument_govcdm_document" displayName="govcdm_personneladjudication_DecisionDocument_govcdm_document" parentSchemaName="govcdm_document" parentDisplayName="Document" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_document" parentDisplayName="Document" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_personnelbackgroundinvestigation_QuestionnaireDocument_govcdm_document" displayName="govcdm_personnelbackgroundinvestigation_QuestionnaireDocument_govcdm_document" parentSchemaName="govcdm_document" parentDisplayName="Document" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_personnelphysicalcredential_LocationIssued_govcdm_location" displayName="govcdm_personnelphysicalcredential_LocationIssued_govcdm_location" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_personnelphysicalcredential_IssuedByOrganizationUnit_govcdm_organizationunit" displayName="govcdm_personnelphysicalcredential_IssuedByOrganizationUnit_govcdm_organizationunit" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_actionstatus" displayName="Action Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_actionstatus" displayName="Action Status" parentSchemaName="govcdm_personnelbackgroundinvestigation" parentDisplayName="Personnel Background Investigation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_eligibilitystatus" displayName="Eligibility Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_adjudicationstatus" displayName="Adjudication Status" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_eligibilitystatus" displayName="Eligibility Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_eligibilitystatus" displayName="Eligibility Status" parentSchemaName="govcdm_personnelclearance" parentDisplayName="Personnel Clearance" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_positiondesignation" displayName="Position Designation" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_positiondesignation" displayName="Position Designation" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_positiondesignation" displayName="Position Designation" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_positiondesignation" displayName="Position Designation" parentSchemaName="govcdm_personnelbackgroundinvestigation" parentDisplayName="Personnel Background Investigation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_positiondesignation" displayName="Position Designation" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_clearancelevelgranted" displayName="Clearance Level Granted" parentSchemaName="govcdm_personnelclearance" parentDisplayName="Personnel Clearance" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seadalcoholconcern" displayName="SEAD - Alcohol Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seadallegiancetousconcern" displayName="SEAD - Allegiance to US Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seadcriminalconcern" displayName="SEAD - Criminal Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seaddrugconcern" displayName="SEAD - Drug Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seadfinancialconcern" displayName="SEAD - Financial Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seadforeigninfluenceconcern" displayName="SEAD - Foreign Influence Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seadforeignpreferenceconcern" displayName="SEAD - Foreign Preference Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seadoutsideactivitiesconcern" displayName="SEAD - Outside Activities Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seadpersonalconductconcern" displayName="SEAD - Personal Conduct Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seadprotectedinfoconcern" displayName="SEAD - Protected Info Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seadpsychologicalconcern" displayName="SEAD - Psychological Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seadsexualbehaviorconcern" displayName="SEAD - Sexual Behavior Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_seaduseofitconcern" displayName="SEAD - Use of IT Concern" parentSchemaName="govcdm_personneladjudication" parentDisplayName="Personnel Adjudication" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_investigationlaunched" displayName="Investigation Launched" parentSchemaName="govcdm_personnelcvtrigger" parentDisplayName="Personnel CV Trigger" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.24063.194" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>govcdm_operationalexcellence</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Gov CDM - Operational Excellence" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>microsoftgovcdm</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft Government Common Data Model" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="microsoftgovcdm" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>govcdm</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>16684</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_location" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_operationalevent" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_operationaleventobjective" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_operationaleventoutcome" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_operationaleventparticipant" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_operationaleventrecommendation" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_organizationunit" behavior="1" />
+      <RootComponent type="9" schemaName="govcdm_operationaleventoutcometype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_operationaleventtype" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.0.7)" />
+        <Dependent type="1" schemaName="govcdm_location" displayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" solution="govcdm_core (1.0.0.7)" />
+        <Dependent type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.0.7)" />
+        <Dependent type="10" schemaName="govcdm_operationalevent_Location_govcdm_location" displayName="govcdm_operationalevent_Location_govcdm_location" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.0.0.7)" />
+        <Dependent type="10" schemaName="govcdm_operationaleventrecommendation_ResponsibleOrganizationUnit_govcdm_organizationunit" displayName="govcdm_operationaleventrecommendation_ResponsibleOrganizationUnit_govcdm_organizationunit" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_actionstatus" displayName="Action Status" solution="govcdm_core (1.0.0.7)" />
+        <Dependent type="2" schemaName="govcdm_implementationstatus" displayName="Implementation Status" parentSchemaName="govcdm_operationaleventrecommendation" parentDisplayName="Operational Event Recommendation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_highmediumlow" displayName="High Medium Low" solution="govcdm_core (1.0.0.7)" />
+        <Dependent type="2" schemaName="govcdm_impact" displayName="Impact" parentSchemaName="govcdm_operationalevent" parentDisplayName="Operational Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_objectiveresult" displayName="Objective Result" solution="govcdm_core (1.0.0.7)" />
+        <Dependent type="2" schemaName="govcdm_result" displayName="Result" parentSchemaName="govcdm_operationaleventobjective" parentDisplayName="Operational Event Objective" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_overallresult" displayName="Overall Result" solution="govcdm_core (1.0.0.7)" />
+        <Dependent type="2" schemaName="govcdm_outcome" displayName="Outcome" parentSchemaName="govcdm_operationalevent" parentDisplayName="Operational Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_polarity" displayName="Polarity" solution="govcdm_core (1.0.0.7)" />
+        <Dependent type="2" schemaName="govcdm_evaluationresult" displayName="Evaluation Result" parentSchemaName="govcdm_operationaleventoutcome" parentDisplayName="Operational Event Outcome" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

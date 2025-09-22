@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{68750c6b-f52c-f011-8c4d-001dd806a1a5}</WebResourceId>
+  <Name>govcdm_executiveactionicon</Name>
+  <DisplayName>Executive Action Icon</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>1</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>1</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/govcdm_executiveactionicon68750C6B-F52C-F011-8C4D-001DD806A1A5</FileName>
+</WebResource>

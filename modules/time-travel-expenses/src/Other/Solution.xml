@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25081.260" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25081.260" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25081.00260">
+  <SolutionManifest>
+    <UniqueName>govcdm_timetravelandexpenses</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Gov CDM - Time, Travel, and Expenses" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>microsoftgovcdm</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft Government Common Data Model" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="microsoftgovcdm" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>govcdm</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>16684</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_country" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_expenseitemcategory" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_expensereport" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_expensereportlineitem" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_location" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_organizationunit" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_stateorprovince" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_timeavailability" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_timeentry" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_timeperiod" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_timeproject" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_timeprojecttask" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_travelpurpose" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_travelrequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_travelsegment" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_methodoftravel" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_country" displayName="Country" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_country" displayName="Country" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_location" displayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_stateorprovince" displayName="State or Province" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_stateorprovince" displayName="State or Province" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_country" parentDisplayName="Country" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_travelrequest_TravelerCountry_govcdm_country" displayName="govcdm_travelrequest_TravelerCountry_govcdm_country" parentSchemaName="govcdm_country" parentDisplayName="Country" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_country" parentDisplayName="Country" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_travelsegment_DestinationCountry_govcdm_country" displayName="govcdm_travelsegment_DestinationCountry_govcdm_country" parentSchemaName="govcdm_country" parentDisplayName="Country" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_timeavailability_Location_govcdm_location" displayName="govcdm_timeavailability_Location_govcdm_location" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_travelrequest_TravelerDutyStation_govcdm_location" displayName="govcdm_travelrequest_TravelerDutyStation_govcdm_location" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_travelrequest_TravelerOrganizationUnit_govcdm_organizationunit" displayName="govcdm_travelrequest_TravelerOrganizationUnit_govcdm_organizationunit" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_stateorprovince" parentDisplayName="State or Province" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_travelrequest_TravelerStateorProvince_govcdm_stateorprovince" displayName="govcdm_travelrequest_TravelerStateorProvince_govcdm_stateorprovince" parentSchemaName="govcdm_stateorprovince" parentDisplayName="State or Province" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_stateorprovince" parentDisplayName="State or Province" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_travelsegment_DestinationStateorProvince_govcdm_stateorprovince" displayName="govcdm_travelsegment_DestinationStateorProvince_govcdm_stateorprovince" parentSchemaName="govcdm_stateorprovince" parentDisplayName="State or Province" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_approvalstatus" displayName="Approval Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_approvalstatus" displayName="Approval Status" parentSchemaName="govcdm_expensereport" parentDisplayName="Expense Report" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_approvalstatus" displayName="Approval Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_approvalstatus" displayName="Approval Status" parentSchemaName="govcdm_timeentry" parentDisplayName="Time Entry" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_approvalstatus" displayName="Approval Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_approvalstatus" displayName="Approval Status" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_commitmentstatus" displayName="Commitment Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_commitmentstatus" displayName="Commitment Status" parentSchemaName="govcdm_timeavailability" parentDisplayName="Time Availability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_personnelavailability" displayName="Personnel Availability" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_personnelavailability" displayName="Personnel Availability" parentSchemaName="govcdm_timeavailability" parentDisplayName="Time Availability" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_submissiontype" displayName="Submission Type" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_submissiontype" displayName="Submission Type" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_areactualexpensesauthorized" displayName="Are Actual Expenses Authorized?" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_islowestcostaircarrierused" displayName="Is Lowest Cost Air Carrier Used?" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_ispersonalconvenienceauthorized" displayName="Is Personal Convenience Authorized?" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_ispremiumtravelauthorized" displayName="Is Premium Travel Authorized?" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_travelhasgovernmentpurchasecard" displayName="Travel Has Government Purchase Card?" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willusecarrental" displayName="Will Use Car Rental" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willusecommercialair" displayName="Will Use Commercial Air" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willusecommercialbus" displayName="Will Use Commercial Bus" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willusecommercialrail" displayName="Will Use Commercial Rail" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willusecommercialship" displayName="Will Use Commercial Ship" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willusegovernmentair" displayName="Will Use Government Air" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willusegovernmentship" displayName="Will Use Government Ship" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willusegovernmentvehicle" displayName="Will Use Government Vehicle" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willuseother" displayName="Will Use Other" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willuseprivateisadvantageous" displayName="Will Use Private Is Advantageous" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willuseprivateislimited" displayName="Will Use Private Is Limited" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willuseprivatelyownedvehicle" displayName="Will Use Privately Owned Vehicle" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_willusetaxi" displayName="Will Use Taxi" parentSchemaName="govcdm_travelrequest" parentDisplayName="Travel Request" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.24032.208" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>govcdm_trainingandcertification</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Gov CDM - Training and Certification" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>microsoftgovcdm</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft Government Common Data Model" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="microsoftgovcdm" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>govcdm</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>16684</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_location" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_organizationunit" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_paygrade" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_skillset" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_trainingachievement" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_trainingcertificate" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_trainingclass" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_trainingclassattendance" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_trainingclassenrollee" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_trainingcourse" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_trainingcoursecertificate" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_trainingcourseenrollee" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_trainingcourserequirement" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_traininginstructor" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_trainingobjective" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_enrollmentstatus" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_knowledgelevel" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="1" schemaName="govcdm_location" displayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="10" schemaName="govcdm_govcdm_trainingclass_Location_govcdm_loca" displayName="govcdm_govcdm_trainingclass_Location_govcdm_loca" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="10" schemaName="govcdm_trainingcourseenrollee_EnrolleeOrganizati" displayName="govcdm_trainingcourseenrollee_EnrolleeOrganizati" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_paygrade" displayName="Pay Grade" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="1" schemaName="govcdm_paygrade" displayName="Pay Grade" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_paygrade" displayName="Pay Grade" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="10" schemaName="govcdm_trainingcourseenrollee_EnrolleePaygrade_g" displayName="govcdm_trainingcourseenrollee_EnrolleePaygrade_g" parentSchemaName="govcdm_paygrade" parentDisplayName="Pay Grade" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_locationid" displayName="Location" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="10" schemaName="govcdm_govcdm_trainingclass_Location_govcdm_loca" displayName="govcdm_govcdm_trainingclass_Location_govcdm_loca" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="10" schemaName="govcdm_govcdm_trainingclass_Location_govcdm_loca" displayName="govcdm_govcdm_trainingclass_Location_govcdm_loca" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="10" schemaName="govcdm_trainingcourseenrollee_EnrolleeOrganizati" displayName="govcdm_trainingcourseenrollee_EnrolleeOrganizati" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_paygrade" parentDisplayName="Pay Grade" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="10" schemaName="govcdm_trainingcourseenrollee_EnrolleePaygrade_g" displayName="govcdm_trainingcourseenrollee_EnrolleePaygrade_g" parentSchemaName="govcdm_paygrade" parentDisplayName="Pay Grade" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_organizationunitid" displayName="Organization Unit" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="10" schemaName="govcdm_trainingcourseenrollee_EnrolleeOrganizati" displayName="govcdm_trainingcourseenrollee_EnrolleeOrganizati" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_paygradeid" displayName="Pay Grade" parentSchemaName="govcdm_paygrade" parentDisplayName="Pay Grade" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="10" schemaName="govcdm_trainingcourseenrollee_EnrolleePaygrade_g" displayName="govcdm_trainingcourseenrollee_EnrolleePaygrade_g" parentSchemaName="govcdm_paygrade" parentDisplayName="Pay Grade" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_employmenttype" displayName="Employment Type" solution="govcdm_core (1.0.0.4)" />
+        <Dependent type="2" schemaName="govcdm_enrolleeemploymenttype" displayName="Enrollee Employment Type" parentSchemaName="govcdm_trainingcourseenrollee" parentDisplayName="Training Course Enrollee" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

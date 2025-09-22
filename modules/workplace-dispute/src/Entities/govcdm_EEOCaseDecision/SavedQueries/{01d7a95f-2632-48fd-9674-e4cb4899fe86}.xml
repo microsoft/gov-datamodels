@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{01d7a95f-2632-48fd-9674-e4cb4899fe86}</savedqueryid>
+    <layoutxml>
+      <grid name="govcdm_eeocasedecisions" jump="govcdm_name" select="1" icon="1" preview="1">
+        <row name="govcdm_eeocasedecision" id="govcdm_eeocasedecisionid">
+          <cell name="govcdm_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="govcdm_eeocasedecision">
+          <attribute name="govcdm_eeocasedecisionid" />
+          <attribute name="govcdm_name" />
+          <attribute name="createdon" />
+          <order attribute="govcdm_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="EEO Case Decision Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

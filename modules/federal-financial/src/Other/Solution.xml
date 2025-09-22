@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25023.204" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25023.204" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25023.00204">
+  <SolutionManifest>
+    <UniqueName>govcdm_federalfinancial</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Gov CDM - Federal Financial" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>microsoftgovcdm</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft Government Common Data Model" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="microsoftgovcdm" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>govcdm</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>16684</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_auditproject" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_auditsubject" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_budget" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_budgetlineitem" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_budgetobjectclassification" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_contract" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_federalfundaccount" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_financialobligation" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_invoice" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_location" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_payment" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_procurementpackage" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_product" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_purchaserequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_purchaserequestitem" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_stateorprovince" behavior="1" />
+      <RootComponent type="9" schemaName="govcdm_paymentmethod" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_paymentstatus" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="1" schemaName="govcdm_location" displayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_product" displayName="Product" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="1" schemaName="govcdm_product" displayName="Product" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_stateorprovince" displayName="State or Province" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="1" schemaName="govcdm_stateorprovince" displayName="State or Province" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_purchaserequest_FromOffice_govcdm_locatio" displayName="govcdm_purchaserequest_FromOffice_govcdm_locatio" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_purchaserequest_ReceivingOffice_govcdm_lo" displayName="govcdm_purchaserequest_ReceivingOffice_govcdm_lo" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_purchaserequest_ShipToOffice_govcdm_locat" displayName="govcdm_purchaserequest_ShipToOffice_govcdm_locat" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_purchaserequest_ToOffice_govcdm_location" displayName="govcdm_purchaserequest_ToOffice_govcdm_location" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_product" parentDisplayName="Product" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_purchaserequestitem_Product_govcdm_produc" displayName="govcdm_purchaserequestitem_Product_govcdm_produc" parentSchemaName="govcdm_product" parentDisplayName="Product" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_stateorprovince" parentDisplayName="State or Province" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_purchaserequest_ShipToAddressState_govcdm" displayName="govcdm_purchaserequest_ShipToAddressState_govcdm" parentSchemaName="govcdm_stateorprovince" parentDisplayName="State or Province" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_approvalstatus" displayName="Approval Status" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_approvalstatus" displayName="Approval Status" parentSchemaName="govcdm_purchaserequest" parentDisplayName="Purchase Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_unitofissue" displayName="Unit of Issue" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_unitofissue" displayName="Unit of Issue" parentSchemaName="govcdm_purchaserequest" parentDisplayName="Purchase Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_unitofissue" displayName="Unit of Issue" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_unitofissue" displayName="Unit of Issue" parentSchemaName="govcdm_purchaserequestitem" parentDisplayName="Purchase Request Item" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

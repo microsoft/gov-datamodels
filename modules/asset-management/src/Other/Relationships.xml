@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_govcdm_asset" />
+  <EntityRelationship Name="business_unit_govcdm_assetcategory" />
+  <EntityRelationship Name="business_unit_govcdm_assetowner" />
+  <EntityRelationship Name="business_unit_govcdm_assetservicerecord" />
+  <EntityRelationship Name="govcdm_govcdm_asset_AssetCategory_govcdm_assetca" />
+  <EntityRelationship Name="govcdm_govcdm_asset_CurrentOwner_govcdm_assetown" />
+  <EntityRelationship Name="govcdm_govcdm_asset_ParentAsset_govcdm_asset" />
+  <EntityRelationship Name="govcdm_govcdm_asset_RelatedProduct_govcdm_produc" />
+  <EntityRelationship Name="govcdm_govcdm_assetcategory_ParentAssetCategory_" />
+  <EntityRelationship Name="govcdm_govcdm_assetowner_Asset_govcdm_asset" />
+  <EntityRelationship Name="govcdm_govcdm_assetowner_Person_contact" />
+  <EntityRelationship Name="govcdm_govcdm_assetservicerecord_Asset_govcdm_as" />
+  <EntityRelationship Name="govcdm_govcdm_assetservicerecord_ServiceLocation" />
+  <EntityRelationship Name="lk_govcdm_asset_createdby" />
+  <EntityRelationship Name="lk_govcdm_asset_modifiedby" />
+  <EntityRelationship Name="lk_govcdm_assetcategory_createdby" />
+  <EntityRelationship Name="lk_govcdm_assetcategory_modifiedby" />
+  <EntityRelationship Name="lk_govcdm_assetowner_createdby" />
+  <EntityRelationship Name="lk_govcdm_assetowner_modifiedby" />
+  <EntityRelationship Name="lk_govcdm_assetservicerecord_createdby" />
+  <EntityRelationship Name="lk_govcdm_assetservicerecord_modifiedby" />
+  <EntityRelationship Name="owner_govcdm_asset" />
+  <EntityRelationship Name="owner_govcdm_assetcategory" />
+  <EntityRelationship Name="owner_govcdm_assetowner" />
+  <EntityRelationship Name="owner_govcdm_assetservicerecord" />
+  <EntityRelationship Name="team_govcdm_asset" />
+  <EntityRelationship Name="team_govcdm_assetcategory" />
+  <EntityRelationship Name="team_govcdm_assetowner" />
+  <EntityRelationship Name="team_govcdm_assetservicerecord" />
+  <EntityRelationship Name="user_govcdm_asset" />
+  <EntityRelationship Name="user_govcdm_assetcategory" />
+  <EntityRelationship Name="user_govcdm_assetowner" />
+  <EntityRelationship Name="user_govcdm_assetservicerecord" />
+</EntityRelationships>

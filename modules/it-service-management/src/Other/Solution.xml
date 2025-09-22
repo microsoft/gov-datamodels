@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.24094.238" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24094.238" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24094.00238">
+  <SolutionManifest>
+    <UniqueName>govcdm_itservicemanagement</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Gov CDM - IT Service Management" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.1.0</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>microsoftgovcdm</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft Government Common Data Model" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="microsoftgovcdm" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>govcdm</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>16684</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_compliancerequirement" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_graderank" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_itassignedentitlements" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itcomplianceassessment" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itdatacenter" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itpoamitem" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itproduct" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itproductentitlement" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itprovisioningrequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itservicerequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itservicerequesttype" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itsystem" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itsystemaccessdetail" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itsystemaccessrequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itsystemaccreditation" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itsystemcomponent" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_itworkassignmentcode" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_location" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_organizationunit" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_personneltype" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_riskitem" behavior="2" />
+      <RootComponent type="1" schemaName="govcdm_stateorprovince" behavior="1" />
+      <RootComponent type="9" schemaName="govcdm_itaccreditationtype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_itsystemaccessaction" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_itsystemaccesslevel" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_itsystemaccessrequesttype" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_compliancerequirement" displayName="Compliance Requirement" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="1" schemaName="govcdm_compliancerequirement" displayName="Compliance Requirement" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_graderank" displayName="Grade-Rank" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="1" schemaName="govcdm_graderank" displayName="Grade-Rank" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="1" schemaName="govcdm_location" displayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_personneltype" displayName="Personnel Type" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="1" schemaName="govcdm_personneltype" displayName="Personnel Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_riskitem" displayName="Risk Item" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="1" schemaName="govcdm_riskitem" displayName="Risk Item" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_riskitem" displayName="Risk Item" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_itsystemaccreditation" displayName="IT System Accreditation" parentSchemaName="govcdm_riskitem" parentDisplayName="Risk Item" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_stateorprovince" displayName="State or Province" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="1" schemaName="govcdm_stateorprovince" displayName="State or Province" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Moniker" parentSchemaName="govcdm_compliancerequirement" parentDisplayName="Compliance Requirement" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_itcomplianceassessment_ComplianceRequirement_govcdm_compliancerequirement" displayName="govcdm_itcomplianceassessment_ComplianceRequirement_govcdm_compliancerequirement" parentSchemaName="govcdm_compliancerequirement" parentDisplayName="Compliance Requirement" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_graderank" parentDisplayName="Grade-Rank" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_itsystemaccessrequest_GradeRank_govcdm_graderank" displayName="govcdm_itsystemaccessrequest_GradeRank_govcdm_graderank" parentSchemaName="govcdm_graderank" parentDisplayName="Grade-Rank" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_itsystemaccessrequest_Location_govcdm_location" displayName="govcdm_itsystemaccessrequest_Location_govcdm_location" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_itsystemaccessrequest_OrganizationUnit_govcdm_organizationunit" displayName="govcdm_itsystemaccessrequest_OrganizationUnit_govcdm_organizationunit" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_itsystemaccreditation_CertificationBody_govcdm_organizationunit" displayName="govcdm_itsystemaccreditation_CertificationBody_govcdm_organizationunit" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_personneltype" parentDisplayName="Personnel Type" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_itsystemaccessrequest_PersonnelType_govcdm_personneltype" displayName="govcdm_itsystemaccessrequest_PersonnelType_govcdm_personneltype" parentSchemaName="govcdm_personneltype" parentDisplayName="Personnel Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_stateorprovince" parentDisplayName="State or Province" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="10" schemaName="govcdm_itsystemaccessrequest_StateorProvince_govcdm_stateorprovince" displayName="govcdm_itsystemaccessrequest_StateorProvince_govcdm_stateorprovince" parentSchemaName="govcdm_stateorprovince" parentDisplayName="State or Province" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_actionstatus" displayName="Action Status" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_actionstatus" displayName="Action Status" parentSchemaName="govcdm_itpoamitem" parentDisplayName="IT POAM Item" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_actionstatus" displayName="Action Status" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_actionstatus" displayName="Action Status" parentSchemaName="govcdm_itsystemaccessdetail" parentDisplayName="IT System Access Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_actionstatus" displayName="Action Status" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_actionstatus" displayName="Action Status" parentSchemaName="govcdm_itsystemaccessrequest" parentDisplayName="IT System Access Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_compliancestatus" displayName="Compliance Status" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_compliancestatus" displayName="Compliance Status" parentSchemaName="govcdm_itcomplianceassessment" parentDisplayName="IT Compliance Assessment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_employmenttype" displayName="Employment Type" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_employmenttype" displayName="Employment Type" parentSchemaName="govcdm_itsystemaccessrequest" parentDisplayName="IT System Access Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_highmediumlow" displayName="High Medium Low" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_risklevel" displayName="Risk Level" parentSchemaName="govcdm_itcomplianceassessment" parentDisplayName="IT Compliance Assessment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_highmediumlow" displayName="High Medium Low" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_riskcategory" displayName="Risk Category" parentSchemaName="govcdm_itpoamitem" parentDisplayName="IT POAM Item" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_securityclassification" displayName="Security Classification" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_securityclassificationrequired" displayName="Security Classification Required" parentSchemaName="govcdm_itsystemaccessrequest" parentDisplayName="IT System Access Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_informationawarenesscompleted" displayName="Information Awareness Completed" parentSchemaName="govcdm_itsystemaccessrequest" parentDisplayName="IT System Access Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_ismanager" displayName="Is Manager?" parentSchemaName="govcdm_itsystemaccessrequest" parentDisplayName="IT System Access Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.1.0)" />
+        <Dependent type="2" schemaName="govcdm_requestorcertifiesneedtoknow" displayName="Requestor Certifies Need to Know" parentSchemaName="govcdm_itsystemaccessrequest" parentDisplayName="IT System Access Request" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

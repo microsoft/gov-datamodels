@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25074.262" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25074.262" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25074.00262">
+  <SolutionManifest>
+    <UniqueName>govcdm_hradministration</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Gov CDM - HR Administration" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.1.2</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>microsoftgovcdm</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft Government Common Data Model" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="microsoftgovcdm" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>govcdm</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>16684</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_country" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_document" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_graderank" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_hractiontype" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrassociatedlegalauthority" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrchangerequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrcompovertimerequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrdisciplinaryaction" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hremploymentdeclaration" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrevent" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrgpcrequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrpersonnelaction" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrpersonnelimpact" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrposition" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrpositionassignment" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrpositiondescription" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrreasonableaccommodation" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrteleworkrequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrtimeoffdetails" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrtimeoffrequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_hrvltpdonation" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_jobseries" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_legalauthority" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_location" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_organizationunit" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_stateorprovince" behavior="1" />
+      <RootComponent type="1" schemaName="systemuser" behavior="1" />
+      <RootComponent type="9" schemaName="govcdm_disciplinaryactiontype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_hreventtype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_timeofftype" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_country" displayName="Country" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_country" displayName="Country" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_document" displayName="Document" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_document" displayName="Document" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_graderank" displayName="Grade-Rank" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_graderank" displayName="Grade-Rank" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_jobseries" displayName="Job Series" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_jobseries" displayName="Job Series" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_legalauthority" displayName="Legal Authority" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_legalauthority" displayName="Legal Authority" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_location" displayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_stateorprovince" displayName="State or Province" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_stateorprovince" displayName="State or Province" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_country" parentDisplayName="Country" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hremploymentdeclaration_CountryofBirth_govcdm_country" displayName="govcdm_hremploymentdeclaration_CountryofBirth_govcdm_country" parentSchemaName="govcdm_country" parentDisplayName="Country" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_document" parentDisplayName="Document" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrpersonnelaction_StandardFormDocument_govcdm_document" displayName="govcdm_hrpersonnelaction_StandardFormDocument_govcdm_document" parentSchemaName="govcdm_document" parentDisplayName="Document" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_graderank" parentDisplayName="Grade-Rank" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrchangerequest_GradeRank_govcdm_graderank" displayName="govcdm_hrchangerequest_GradeRank_govcdm_graderank" parentSchemaName="govcdm_graderank" parentDisplayName="Grade-Rank" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_graderank" parentDisplayName="Grade-Rank" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrchangerequest_NewGradeRank_govcdm_graderank" displayName="govcdm_hrchangerequest_NewGradeRank_govcdm_graderank" parentSchemaName="govcdm_graderank" parentDisplayName="Grade-Rank" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_jobseries" parentDisplayName="Job Series" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrchangerequest_JobSeries_govcdm_jobseries" displayName="govcdm_hrchangerequest_JobSeries_govcdm_jobseries" parentSchemaName="govcdm_jobseries" parentDisplayName="Job Series" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_jobseries" parentDisplayName="Job Series" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrchangerequest_NewJobSeries_govcdm_jobseries" displayName="govcdm_hrchangerequest_NewJobSeries_govcdm_jobseries" parentSchemaName="govcdm_jobseries" parentDisplayName="Job Series" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_legalauthority" parentDisplayName="Legal Authority" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrassociatedlegalauthority_LegalAuthority_govcdm_legalauthority" displayName="govcdm_hrassociatedlegalauthority_LegalAuthority_govcdm_legalauthority" parentSchemaName="govcdm_legalauthority" parentDisplayName="Legal Authority" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrchangerequest_Location_govcdm_location" displayName="govcdm_hrchangerequest_Location_govcdm_location" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrchangerequest_NewLocation_govcdm_location" displayName="govcdm_hrchangerequest_NewLocation_govcdm_location" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrchangerequest_NewOrganizationUnit_govcdm_organizationunit" displayName="govcdm_hrchangerequest_NewOrganizationUnit_govcdm_organizationunit" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrchangerequest_OrganizationUnit_govcdm_organizationunit" displayName="govcdm_hrchangerequest_OrganizationUnit_govcdm_organizationunit" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrevent_OrganizationUnit_govcdm_organizationunit" displayName="govcdm_hrevent_OrganizationUnit_govcdm_organizationunit" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hrposition_OrganizationUnit_govcdm_organi" displayName="govcdm_hrposition_OrganizationUnit_govcdm_organi" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_stateorprovince" parentDisplayName="State or Province" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_hremploymentdeclaration_StateofBirth_govcdm_stateorprovince" displayName="govcdm_hremploymentdeclaration_StateofBirth_govcdm_stateorprovince" parentSchemaName="govcdm_stateorprovince" parentDisplayName="State or Province" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_actionstatus" displayName="Action Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_actionstatus" displayName="Action Status" parentSchemaName="govcdm_hrdisciplinaryaction" parentDisplayName="HR Disciplinary Action" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_actionstatus" displayName="Action Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_actionstatus" displayName="Action Status" parentSchemaName="govcdm_hrevent" parentDisplayName="HR Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_approvalstatus" displayName="Approval Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_approvalstatus" displayName="Approval Status" parentSchemaName="govcdm_hrchangerequest" parentDisplayName="HR Change Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_approvalstatus" displayName="Approval Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_approvalstatus" displayName="Approval Status" parentSchemaName="govcdm_hrvltpdonation" parentDisplayName="HR VLTP Donation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_priority" displayName="Priority" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_priority" displayName="Priority" parentSchemaName="govcdm_hrevent" parentDisplayName="HR Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_requeststatus" displayName="Request Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_requeststatus" displayName="Request Status" parentSchemaName="govcdm_hrchangerequest" parentDisplayName="HR Change Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_requeststatus" displayName="Request Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_reviewstatus" displayName="Review Status" parentSchemaName="govcdm_hrdisciplinaryaction" parentDisplayName="HR Disciplinary Action" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_securityclassification" displayName="Security Classification" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_securityclassification" displayName="Security Classification" parentSchemaName="govcdm_hrevent" parentDisplayName="HR Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_appealfiled" displayName="Appeal Filed" parentSchemaName="govcdm_hrdisciplinaryaction" parentDisplayName="HR Disciplinary Action" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_unionnotified" displayName="Union Notified" parentSchemaName="govcdm_hrdisciplinaryaction" parentDisplayName="HR Disciplinary Action" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_haschargesagainst" displayName="Has Charges Against" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_hasexistingretirementbenefits" displayName="Has Existing Retirement Benefits" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_hasfederaldebtdeliquency" displayName="Has Federal Debt Deliquency" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_hasjobterminationhistory" displayName="Has Job Termination History" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_hasmilitaryconviction" displayName="Has Military Conviction" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_hasoffensehistory" displayName="Has Offense History" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_hasrelativesatagency" displayName="Has Relatives at Agency" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_selectiveserviceeligible" displayName="Selective Service Eligible" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_selectiveserviceregistered" displayName="Selective Service Registered" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_servedinmilitary" displayName="Served In Military" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_waivedlifeinsurancepreviously" displayName="Waived Life Insurance Previously" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_waivercancelledpreviously" displayName="Waiver Cancelled Previously" parentSchemaName="govcdm_hremploymentdeclaration" parentDisplayName="HR Employment Declaration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_issensitive" displayName="Is Sensitive" parentSchemaName="govcdm_hrevent" parentDisplayName="HR Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_fmlachild" displayName="FMLA Child" parentSchemaName="govcdm_hrtimeoffrequest" parentDisplayName="HR Time Off Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_fmlasickrelative" displayName="FMLA Sick Relative" parentSchemaName="govcdm_hrtimeoffrequest" parentDisplayName="HR Time Off Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_fmlasickself" displayName="FMLA Sick Self" parentSchemaName="govcdm_hrtimeoffrequest" parentDisplayName="HR Time Off Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_isfmlainvoked" displayName="Is FMLA Invoked?" parentSchemaName="govcdm_hrtimeoffrequest" parentDisplayName="HR Time Off Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="sameweekday_options" displayName="Day" solution="msdynce_ActivitiesPatch (9.0.25072.250704001)">
+          <package appName="msdynce_Activities" version="9.0.25072.250704001">msdynce_EnableUCIByDefault (9.0.25072.250704001)</package>
+        </Required>
+        <Dependent type="2" schemaName="govcdm_alternateworkdays" displayName="Alternate Work Days" parentSchemaName="govcdm_hrteleworkrequest" parentDisplayName="HR Telework Request" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

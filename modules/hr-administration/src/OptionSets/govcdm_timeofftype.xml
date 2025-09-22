@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="govcdm_timeofftype" localizedName="Time Off Type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Time Off Type" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="933920000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Accrued Annual Leave" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920001" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Restored Annual Leave" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920002" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Advanced Annual Leave" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920003" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Accrued Sick Leave" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920004" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Advanced Sick Leave" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920005" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Compensatory" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920006" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Other" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920007" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Leave Without Pay" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

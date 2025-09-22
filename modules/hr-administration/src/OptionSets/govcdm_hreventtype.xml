@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="govcdm_hreventtype" localizedName="HR Event Type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="HR Event Type" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="166840000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Onboarding" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840001" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Offboarding" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840002" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Detail Assignment" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840003" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Promotion Process" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840004" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Reassignment" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840005" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Return to Duty" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840006" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Realignment" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840007" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Conversion" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840008" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Retirement Preparation" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840009" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Disciplinary Action" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840010" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Separation Preparation" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840011" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Rehire / Reinstatement" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840012" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Probation Completion" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840013" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Leave Without Pay (LWOP)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840014" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Agency Transfer (Inbound)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840015" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Agency Transfer (Outbound)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25043.226" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25044.00210">
+  <Entities />
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
+  <Templates />
+  <EntityImageConfigs>
+    <EntityImageConfig>
+      <parententitylogicalname>govcdm_dataentryresponse</parententitylogicalname>
+      <primaryimageattribute>govcdm_responseimage</primaryimageattribute>
+    </EntityImageConfig>
+    <EntityImageConfig>
+      <parententitylogicalname>govcdm_interactiveresponse</parententitylogicalname>
+      <primaryimageattribute>govcdm_responseimage</primaryimageattribute>
+    </EntityImageConfig>
+  </EntityImageConfigs>
+  <AttributeImageConfigs>
+    <AttributeImageConfig>
+      <attributelogicalname>govcdm_responseimage</attributelogicalname>
+      <parententitylogicalname>govcdm_dataentryresponse</parententitylogicalname>
+      <canstorefullimage>1</canstorefullimage>
+    </AttributeImageConfig>
+    <AttributeImageConfig>
+      <attributelogicalname>govcdm_responseimage</attributelogicalname>
+      <parententitylogicalname>govcdm_interactiveresponse</parententitylogicalname>
+      <canstorefullimage>1</canstorefullimage>
+    </AttributeImageConfig>
+  </AttributeImageConfigs>
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <WebResources />
+  <CustomControls />
+  <EntityDataProviders />
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>

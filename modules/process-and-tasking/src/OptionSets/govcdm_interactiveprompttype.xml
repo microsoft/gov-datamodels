@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="govcdm_interactiveprompttype" localizedName="Interactive Prompt Type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Interactive Prompt Type" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="933920000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Checklist" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920001" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Survey or Questionnaire" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920002" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Short Text Response" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920003" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Long Text Response" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920004" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Image Response" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920005" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="File Response" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920006" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Whole Number Response" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920007" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Date Time Response" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="933920008" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Float Response" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="166840001" IsHidden="0">
+      <labels>
+        <label description="Choice Response" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

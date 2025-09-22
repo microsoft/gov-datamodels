@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{03ca0605-a616-4b58-a00b-7407ff31c6bd}</savedqueryid>
+    <layoutxml>
+      <grid name="govcdm_actionitems" jump="subject" select="1" icon="1" preview="1">
+        <row name="govcdm_actionitem" id="activityid">
+          <cell name="subject" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="govcdm_actionitem">
+          <attribute name="activityid" />
+          <attribute name="subject" />
+          <attribute name="createdon" />
+          <order attribute="subject" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="in">
+              <value>0</value>
+              <value>3</value>
+            </condition>
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.11</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Action Item Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

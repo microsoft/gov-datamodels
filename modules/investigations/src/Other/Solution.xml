@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25051.206" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25051.206" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25052.00230">
+  <SolutionManifest>
+    <UniqueName>govcdm_investigations</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Gov CDM - Investigations" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>microsoftgovcdm</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft Government Common Data Model" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="microsoftgovcdm" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>govcdm</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>16684</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_icmcase" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_icmcasecontact" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_icmcasecontactviolation" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_icmcaseevidence" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_icmcaseviolation" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_icmevidence" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_icmlead" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_icmreferral" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_icmviolation" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_judicialdistrict" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_location" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_organizationinitiative" behavior="1" />
+      <RootComponent type="9" schemaName="govcdm_icmcasecontacttype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_icmcasestage" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_icmreferraltype" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_judicialdistrict" displayName="Judicial District" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="1" schemaName="govcdm_judicialdistrict" displayName="Judicial District" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="1" schemaName="govcdm_location" displayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_organizationinitiative" displayName="Organization Initiative" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="1" schemaName="govcdm_organizationinitiative" displayName="Organization Initiative" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_judicialdistrict" parentDisplayName="Judicial District" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="10" schemaName="govcdm_icmcase_JudicialDistrict_govcdm_judicialdistrict" displayName="govcdm_icmcase_JudicialDistrict_govcdm_judicialdistrict" parentSchemaName="govcdm_judicialdistrict" parentDisplayName="Judicial District" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="10" schemaName="govcdm_icmlead_IncidentPrimaryLocation_govcdm_location" displayName="govcdm_icmlead_IncidentPrimaryLocation_govcdm_location" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationinitiative" parentDisplayName="Organization Initiative" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="10" schemaName="govcdm_icmcase_OrganizationInitiative_govcdm_organizationinitiative" displayName="govcdm_icmcase_OrganizationInitiative_govcdm_organizationinitiative" parentSchemaName="govcdm_organizationinitiative" parentDisplayName="Organization Initiative" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_methodofcontact" displayName="Method of Contact" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="2" schemaName="govcdm_preferredmethodofcontact" displayName="Preferred Method of Contact" parentSchemaName="govcdm_icmcasecontact" parentDisplayName="ICM Case Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_methodofcontact" displayName="Method of Contact" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="2" schemaName="govcdm_preferredmethodofcontact" displayName="Preferred Method of Contact" parentSchemaName="govcdm_icmlead" parentDisplayName="ICM Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_methodofreceipt" displayName="Method of Receipt" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="2" schemaName="govcdm_methodofreceipt" displayName="Method of Receipt" parentSchemaName="govcdm_icmlead" parentDisplayName="ICM Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_priority" displayName="Priority" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="2" schemaName="govcdm_priority" displayName="Priority" parentSchemaName="govcdm_icmlead" parentDisplayName="ICM Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_securityclassification" displayName="Security Classification" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="2" schemaName="govcdm_securityclassification" displayName="Security Classification" parentSchemaName="govcdm_icmcase" parentDisplayName="ICM Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="2" schemaName="govcdm_remainanonymous" displayName="Remain Anonymous" parentSchemaName="govcdm_icmcasecontact" parentDisplayName="ICM Case Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.1)" />
+        <Dependent type="2" schemaName="govcdm_remainanonymous" displayName="Remain Anonymous" parentSchemaName="govcdm_icmlead" parentDisplayName="ICM Lead" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

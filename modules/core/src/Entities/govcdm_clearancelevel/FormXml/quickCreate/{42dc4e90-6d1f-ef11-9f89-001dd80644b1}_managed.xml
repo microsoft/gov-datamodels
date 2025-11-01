@@ -29,7 +29,7 @@
                     <row>
                       <cell id="{1dbb3f19-df5d-4bc8-98fe-1e7a3e5d4449}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="" languagecode="1033" />
+                          <label description="Name" languagecode="1033" />
                         </labels>
                         <control id="govcdm_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="govcdm_name" disabled="false" />
                       </cell>

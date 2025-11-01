@@ -20,8 +20,26 @@ $projectRoot = "$PSScriptRoot\.."
 . "${projectRoot}\.scripts\Util.ps1"
 
 Write-Host "Connecting to Dataverse tenant and environment..." -ForegroundColor Cyan
-Connect-DataverseTenant
-Connect-DataverseEnvironment
+
+# select deployment configuration
+Write-Host ""
+$deploymentConfig = Select-Deployment
+
+# connect to the selected tenant
+Write-Host ""
+Write-Host "Connecting to tenant: $($deploymentConfig.Tenant)"
+Connect-DataverseTenant -authProfile $deploymentConfig.Tenant
+
+# allow user to select target environment from the deployment config
+Write-Host ""
+Write-Host "Available Environments:"
+$envNames = $deploymentConfig.Environments.PSObject.Properties.Name
+$selectedEnvKey = Select-ItemFromList $envNames
+$targetEnv = $deploymentConfig.Environments.$selectedEnvKey
+
+Write-Host ""
+Write-Host "Connecting to environment: $targetEnv"
+Connect-DataverseEnvironment -envName $targetEnv
 
 $ipType = 'modules'
 $baseFolder = Join-Path $projectRoot $ipType

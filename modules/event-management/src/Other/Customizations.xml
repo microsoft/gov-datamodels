@@ -1,14 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25092.168" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25092.00168">
   <Entities />
   <Roles />
   <Workflows />
   <FieldSecurityProfiles />
   <Templates />
+  <EntityImageConfigs>
+    <EntityImageConfig>
+      <parententitylogicalname>govcdm_event</parententitylogicalname>
+      <primaryimageattribute>govcdm_eventlogo</primaryimageattribute>
+    </EntityImageConfig>
+  </EntityImageConfigs>
+  <AttributeImageConfigs>
+    <AttributeImageConfig>
+      <attributelogicalname>govcdm_eventlogo</attributelogicalname>
+      <parententitylogicalname>govcdm_event</parententitylogicalname>
+      <canstorefullimage>1</canstorefullimage>
+    </AttributeImageConfig>
+    <AttributeImageConfig>
+      <attributelogicalname>govcdm_eventimage</attributelogicalname>
+      <parententitylogicalname>govcdm_event</parententitylogicalname>
+      <canstorefullimage>1</canstorefullimage>
+    </AttributeImageConfig>
+  </AttributeImageConfigs>
   <EntityMaps />
   <EntityRelationships />
   <OrganizationSettings />
   <optionsets />
+  <WebResources />
   <CustomControls />
   <EntityDataProviders />
   <Languages>

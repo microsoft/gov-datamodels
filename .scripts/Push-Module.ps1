@@ -14,22 +14,42 @@ if ($true -eq (Confirm-Next "Proceed (y/n)?")) {
     $ipType = "modules"
     $baseFolder = "$projectRoot\$ipType"
 
-    # ask for which module to push
+    # select deployment configuration once at the start
     Write-Host ""
-    $excludeFolders = "__pycache__", ".scripts"
-    $folderNames = Get-ChildItem -Path "$projectRoot\$ipType" -Directory -Exclude $excludeFolders | Select-Object -ExpandProperty Name
-    $module = Select-ItemFromList $folderNames
+    $deploymentConfig = Select-Deployment
 
-    Connect-DataverseTenant
-    Connect-DataverseEnvironment
+    # connect to the selected tenant once
+    Write-Host ""
+    Write-Host "Connecting to tenant: $($deploymentConfig.Tenant)"
+    Connect-DataverseTenant -authProfile $deploymentConfig.Tenant
 
-    if ($module -eq "core") {
-        Deploy-Solution "$baseFolder\$module" -AutoConfirm
-    }
-    elseif ($module -eq "process-and-tasking") {
-        Deploy-Solution "$baseFolder\$module" -AutoConfirm
-    }
-    else {
-        Deploy-Solution "$baseFolder\$module" -AutoConfirm
-    }
+    # Start the loop for module selection and deployment
+    do {
+        # ask for which module to push
+        Write-Host ""
+        $excludeFolders = "__pycache__", ".scripts"
+        $folderNames = Get-ChildItem -Path "$projectRoot\$ipType" -Directory -Exclude $excludeFolders | Select-Object -ExpandProperty Name
+        $module = Select-ItemFromList $folderNames
+
+        if ($module -ne "") {
+            # determine target environment based on module
+            $targetEnv = if ($module -eq "core") {
+                $deploymentConfig.Environments."GOV CDM CORE"
+            } elseif ($module -eq "process-and-tasking") {
+                $deploymentConfig.Environments."GOV CDM UTILITY"
+            } else {
+                $deploymentConfig.Environments."GOV CDM MODULE"
+            }
+
+            # connect to the determined environment
+            Write-Host ""
+            Write-Host "Connecting to environment: $targetEnv"
+            Connect-DataverseEnvironment -envName $targetEnv
+
+            # deploy the solution
+            Deploy-Solution "$baseFolder\$module" -AutoConfirm
+        }
+    } while ($module -ne "") # Continue looping until the input is an empty string
+
+    Write-Host "Operation complete."
 }

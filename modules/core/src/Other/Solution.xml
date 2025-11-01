@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.25073.234" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25073.234" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25073.00234">
+<ImportExportXml version="9.2.25092.168" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25092.168" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25092.00168">
   <SolutionManifest>
     <UniqueName>govcdm_core</UniqueName>
     <LocalizedNames>
@@ -147,6 +147,7 @@
       <RootComponent type="9" schemaName="govcdm_compliancestatus" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_eligibilitystatus" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_employmenttype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_engagementmode" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_generalcategory" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_highmediumlow" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_impact" behavior="0" />

@@ -10,6 +10,10 @@
 *.userosscache
 *.sln.docstates
 *.env
+.config/*
+!.config/*-template.json
+!.config/README.md
+.vscode/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

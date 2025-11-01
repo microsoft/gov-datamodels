@@ -1,0 +1,20 @@
+{
+    "Deployments": {
+        "Development": {
+            "Tenant": "GLOWS DEV",
+            "Environments": {
+                "GOV CDM CORE": "GOV CDM CORE",
+                "GOV CDM UTILITY": "GOV CDM UTILITY",
+                "GOV CDM MODULE": "GOV CDM MODULE"
+            }
+        },
+        "Test": {
+            "Tenant": "GLOWS TEST",
+            "Environments": {
+                "GOV CDM CORE": "GOV CDM CORE",
+                "GOV CDM UTILITY": "GOV CDM UTILITY",
+                "GOV CDM MODULE": "GOV CDM MODULE"
+            }
+        }
+    }
+}

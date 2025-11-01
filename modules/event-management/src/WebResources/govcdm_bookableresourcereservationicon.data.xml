@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{e31ec4bd-baae-f011-bbd2-001dd80888ed}</WebResourceId>
+  <Name>govcdm_bookableresourcereservationicon</Name>
+  <DisplayName>Bookable Resource Reservation Icon</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>1.0.0.3</IntroducedVersion>
+  <IsEnabledForMobileClient>1</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>1</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/govcdm_bookableresourcereservationiconE31EC4BD-BAAE-F011-BBD2-001DD80888ED</FileName>
+</WebResource>

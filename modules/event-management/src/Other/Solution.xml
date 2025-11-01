@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.23093.252" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.25092.168" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25092.168" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25092.00168">
   <SolutionManifest>
     <UniqueName>govcdm_eventmanagement</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Gov CDM - Event Management" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.1</Version>
+    <Version>1.0.0.3</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>microsoftgovcdm</UniqueName>
@@ -19,7 +19,7 @@
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
       <CustomizationPrefix>govcdm</CustomizationPrefix>
-      <CustomizationOptionValuePrefix>93392</CustomizationOptionValuePrefix>
+      <CustomizationOptionValuePrefix>16684</CustomizationOptionValuePrefix>
       <Addresses>
         <Address>
           <AddressNumber>1</AddressNumber>
@@ -80,14 +80,82 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="1" />
       <RootComponent type="1" schemaName="contact" behavior="1" />
       <RootComponent type="1" schemaName="govcdm_bookableresource" behavior="0" />
       <RootComponent type="1" schemaName="govcdm_bookableresourcepayment" behavior="0" />
       <RootComponent type="1" schemaName="govcdm_bookableresourcereservation" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_document" behavior="1" />
       <RootComponent type="1" schemaName="govcdm_event" behavior="0" />
       <RootComponent type="1" schemaName="govcdm_eventattendee" behavior="0" />
-      <RootComponent type="9" schemaName="govcdm_eventtype" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_evententry" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_eventparticipant" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_eventrequest" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_eventsession" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_eventsessionparticipant" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_eventsponsor" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_eventtrack" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_eventtype" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_location" behavior="1" />
+      <RootComponent type="431" schemaName="govcdm_event govcdm_eventimage" behavior="0" />
+      <RootComponent type="431" schemaName="govcdm_event govcdm_eventlogo" behavior="0" />
+      <RootComponent type="432" schemaName="govcdm_event" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_bookableresourcereservationicon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_evententryicon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_eventicon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_eventparticipanticon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_eventrequesticon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_eventsessionicon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_eventsessionparticipanticon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_eventsponsoricon" behavior="0" />
+      <RootComponent type="61" schemaName="govcdm_eventtrackicon" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_eventcategory" behavior="0" />
     </RootComponents>
-    <MissingDependencies />
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_document" displayName="Document" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_document" displayName="Document" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="1" schemaName="govcdm_location" displayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_document" parentDisplayName="Document" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_event_AgendaDocument_govcdm_document" displayName="govcdm_event_AgendaDocument_govcdm_document" parentSchemaName="govcdm_document" parentDisplayName="Document" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_document" parentDisplayName="Document" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_event_CDANDADocument_govcdm_document" displayName="govcdm_event_CDANDADocument_govcdm_document" parentSchemaName="govcdm_document" parentDisplayName="Document" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_document" parentDisplayName="Document" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_event_FAQDocument_govcdm_document" displayName="govcdm_event_FAQDocument_govcdm_document" parentSchemaName="govcdm_document" parentDisplayName="Document" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_document" parentDisplayName="Document" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_event_TermsandConditionsDocument_govcdm_document" displayName="govcdm_event_TermsandConditionsDocument_govcdm_document" parentSchemaName="govcdm_document" parentDisplayName="Document" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_document" parentDisplayName="Document" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_event_VolunteerDocument_govcdm_document" displayName="govcdm_event_VolunteerDocument_govcdm_document" parentSchemaName="govcdm_document" parentDisplayName="Document" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="10" schemaName="govcdm_event_EventLocation_govcdm_location" displayName="govcdm_event_EventLocation_govcdm_location" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_commitmentstatus" displayName="Commitment Status" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_commitmentstatus" displayName="Commitment Status" parentSchemaName="govcdm_event" parentDisplayName="Event" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_engagementmode" displayName="Engagement Mode" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_sessiontype" displayName="Session Type" parentSchemaName="govcdm_eventsession" parentDisplayName="Event Session" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="govcdm_yesno" displayName="Yes No" solution="govcdm_core (1.0.2.2)" />
+        <Dependent type="2" schemaName="govcdm_documentsrequired" displayName="Documents Required" parentSchemaName="govcdm_event" parentDisplayName="Event" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>

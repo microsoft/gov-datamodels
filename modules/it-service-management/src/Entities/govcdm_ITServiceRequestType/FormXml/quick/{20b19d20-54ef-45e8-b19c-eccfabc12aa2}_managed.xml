@@ -22,7 +22,7 @@
                     <row>
                       <cell id="{f89411b8-4a17-4023-b405-50b38d1b958a}">
                         <labels>
-                          <label description="" languagecode="1033" />
+                          <label description="Name" languagecode="1033" />
                         </labels>
                         <control id="govcdm_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="govcdm_name" />
                       </cell>
@@ -30,7 +30,7 @@
                     <row>
                       <cell id="{e03487ef-daed-4cd4-a1be-86da5771e4b8}">
                         <labels>
-                          <label description="" languagecode="1033" />
+                          <label description="Owner" languagecode="1033" />
                         </labels>
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                       </cell>

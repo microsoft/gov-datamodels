@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.25092.168" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25092.168" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25092.00168">
+<ImportExportXml version="9.2.25093.163" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25093.163" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25094.00171">
   <SolutionManifest>
     <UniqueName>govcdm_core</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Gov CDM - Core" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.2.2</Version>
+    <Version>1.0.2.3</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>microsoftgovcdm</UniqueName>
@@ -155,9 +155,11 @@
       <RootComponent type="9" schemaName="govcdm_legalauthorityimpact" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_legalauthoritystatus" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_legalauthoritytype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_lifecyclestage" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_methodofcontact" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_methodofreceipt" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_objectiveresult" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_operationalstatus" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_overallresult" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_personnelavailability" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_polarity" behavior="0" />
@@ -169,6 +171,7 @@
       <RootComponent type="9" schemaName="govcdm_severitylevel" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_submissiontype" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_unitofissue" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_visibility" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_yesno" behavior="0" />
     </RootComponents>
     <MissingDependencies />

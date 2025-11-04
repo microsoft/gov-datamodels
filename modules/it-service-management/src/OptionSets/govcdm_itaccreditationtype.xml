@@ -12,7 +12,7 @@
     <Description description="" languagecode="1033" />
   </Descriptions>
   <options>
-    <option value="166840000" ExternalValue="">
+    <option value="166840000" ExternalValue="" IsHidden="0">
       <labels>
         <label description="ATO (Authority to Operate)" languagecode="1033" />
       </labels>
@@ -20,7 +20,7 @@
         <Description description="" languagecode="1033" />
       </Descriptions>
     </option>
-    <option value="166840001" ExternalValue="">
+    <option value="166840001" ExternalValue="" IsHidden="0">
       <labels>
         <label description="IATO (Interim Authority to Operate)" languagecode="1033" />
       </labels>
@@ -28,7 +28,7 @@
         <Description description="" languagecode="1033" />
       </Descriptions>
     </option>
-    <option value="166840002" ExternalValue="">
+    <option value="166840002" ExternalValue="" IsHidden="0">
       <labels>
         <label description="ISO 27001" languagecode="1033" />
       </labels>

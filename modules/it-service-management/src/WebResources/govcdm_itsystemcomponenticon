@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.92px;}</style>
+</defs>
+<g id="roll_brush" data-name="roll brush">
+<circle class="cls-1" cx="11.96" cy="14.93" r="2.88"/>
+<line class="cls-1" x1="9.47" y1="16.37" x2="8.65" y2="16.84"/>
+<line class="cls-1" x1="15.28" y1="13.01" x2="14.46" y2="13.49"/>
+<line class="cls-1" x1="9.47" y1="16.37" x2="8.65" y2="16.84"/>
+<line class="cls-1" x1="15.28" y1="13.01" x2="14.46" y2="13.49"/>
+<line class="cls-1" x1="9.47" y1="13.49" x2="8.65" y2="13.01"/>
+<line class="cls-1" x1="15.28" y1="16.84" x2="14.46" y2="16.37"/>
+<line class="cls-1" x1="9.47" y1="13.49" x2="8.65" y2="13.01"/>
+<line class="cls-1" x1="15.28" y1="16.84" x2="14.46" y2="16.37"/>
+<line class="cls-1" x1="11.96" y1="12.05" x2="11.96" y2="11.09"/>
+<line class="cls-1" x1="11.96" y1="18.76" x2="11.96" y2="17.8"/>
+<line class="cls-1" x1="11.96" y1="12.05" x2="11.96" y2="11.09"/>
+<line class="cls-1" x1="11.96" y1="18.76" x2="11.96" y2="17.8"/>
+<rect class="cls-1" x="1.41" y="1.5" width="21.1" height="21.1"/>
+<polygon class="cls-1" points="22.51 7.25 16.24 7.25 14.32 7.25 1.41 7.25 1.41 1.5 22.51 1.5 22.51 7.25"/>
+<line class="cls-1" x1="4.29" y1="4.38" x2="6.21" y2="4.38"/>
+<line class="cls-1" x1="8.13" y1="4.38" x2="10.05" y2="4.38"/>
+<line class="cls-1" x1="11.96" y1="4.38" x2="13.88" y2="4.38"/>
+</g>
+</svg>

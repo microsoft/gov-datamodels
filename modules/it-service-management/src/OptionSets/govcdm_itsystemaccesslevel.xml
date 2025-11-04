@@ -12,7 +12,7 @@
     <Description description="" languagecode="1033" />
   </Descriptions>
   <options>
-    <option value="166840000" ExternalValue="">
+    <option value="166840000" ExternalValue="" IsHidden="0">
       <labels>
         <label description="Authorized" languagecode="1033" />
       </labels>
@@ -20,7 +20,7 @@
         <Description description="" languagecode="1033" />
       </Descriptions>
     </option>
-    <option value="166840001" ExternalValue="">
+    <option value="166840001" ExternalValue="" IsHidden="0">
       <labels>
         <label description="Privileged" languagecode="1033" />
       </labels>

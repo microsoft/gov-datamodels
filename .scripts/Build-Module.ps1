@@ -5,9 +5,10 @@
 $projectRoot = "$PSScriptRoot\.."
 . "${projectRoot}\.scripts\Util.ps1"
 
-# ask which type of ip
-$ipType = "modules"
-$baseFolder = "$projectRoot\modules"
+# Ask user to select module type (modules or cross-module)
+Write-Host ""
+$ipType = Select-ModuleType $projectRoot
+$baseFolder = "$projectRoot\$ipType"
 
 # ask for which module to sync
 Write-Host ""

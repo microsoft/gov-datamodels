@@ -15,6 +15,8 @@
   <EntityRelationship Name="business_unit_govcdm_itsystemaccreditation" />
   <EntityRelationship Name="business_unit_govcdm_itsystemcomponent" />
   <EntityRelationship Name="business_unit_govcdm_itsystemcomponenttype" />
+  <EntityRelationship Name="business_unit_govcdm_ittechnology" />
+  <EntityRelationship Name="business_unit_govcdm_ittechnologytype" />
   <EntityRelationship Name="business_unit_govcdm_itworkassignmentcode" />
   <EntityRelationship Name="govcdm_itassignedentitlements_ITProductEntitlement_govcdm_itproductentitlement" />
   <EntityRelationship Name="govcdm_itassignedentitlements_Person_contact" />
@@ -33,8 +35,7 @@
   <EntityRelationship Name="govcdm_itsystem_InformationSecurityOfficer_contact" />
   <EntityRelationship Name="govcdm_itsystem_ITDatacenter_govcdm_itdatacenter" />
   <EntityRelationship Name="govcdm_itsystem_PointofContact_contact" />
-  <EntityRelationship Name="govcdm_itsystem_PrimaryPlatform_govcdm_itproduct" />
-  <EntityRelationship Name="govcdm_itsystem_PrimaryProgrammingLanguage_govcdm_itproduct" />
+  <EntityRelationship Name="govcdm_itsystem_PrimaryTechnology_govcdm_ittechnology" />
   <EntityRelationship Name="govcdm_itsystemaccessdetail_ITProduct_govcdm_itproduct" />
   <EntityRelationship Name="govcdm_itsystemaccessdetail_ITProductEntitlement_govcdm_itproductentitlement" />
   <EntityRelationship Name="govcdm_itsystemaccessdetail_ITSystemAccessRequest_govcdm_itsystemaccessrequest" />
@@ -56,8 +57,12 @@
   <EntityRelationship Name="govcdm_itsystemcomponent_ITProduct_govcdm_itproduct" />
   <EntityRelationship Name="govcdm_itsystemcomponent_ITSystem_govcdm_itsystem" />
   <EntityRelationship Name="govcdm_itsystemcomponent_ITSystemComponentType_govcdm_itsystemcomponenttype" />
+  <EntityRelationship Name="govcdm_itsystemcomponent_ITTechnology_govcdm_ittechnology" />
   <EntityRelationship Name="govcdm_itsystemcomponent_ParentITSystemComponent_govcdm_itsystemcomponent" />
   <EntityRelationship Name="govcdm_itsystemcomponent_PrimarySteward_contact" />
+  <EntityRelationship Name="govcdm_ittechnology_ITTechnologyType_govcdm_ittechnologytype" />
+  <EntityRelationship Name="govcdm_ittechnology_Vendor_account" />
+  <EntityRelationship Name="govcdm_ittechnologytype_ParentITTechnologyType_govcdm_ittechnologytype" />
   <EntityRelationship Name="govcdm_riskitem_ITSystemAccreditation_govcdm_itsystemaccreditation" />
   <EntityRelationship Name="lk_govcdm_itassignedentitlements_createdby" />
   <EntityRelationship Name="lk_govcdm_itassignedentitlements_modifiedby" />
@@ -89,6 +94,10 @@
   <EntityRelationship Name="lk_govcdm_itsystemcomponent_modifiedby" />
   <EntityRelationship Name="lk_govcdm_itsystemcomponenttype_createdby" />
   <EntityRelationship Name="lk_govcdm_itsystemcomponenttype_modifiedby" />
+  <EntityRelationship Name="lk_govcdm_ittechnology_createdby" />
+  <EntityRelationship Name="lk_govcdm_ittechnology_modifiedby" />
+  <EntityRelationship Name="lk_govcdm_ittechnologytype_createdby" />
+  <EntityRelationship Name="lk_govcdm_ittechnologytype_modifiedby" />
   <EntityRelationship Name="lk_govcdm_itworkassignmentcode_createdby" />
   <EntityRelationship Name="lk_govcdm_itworkassignmentcode_modifiedby" />
   <EntityRelationship Name="owner_govcdm_itassignedentitlements" />
@@ -106,6 +115,8 @@
   <EntityRelationship Name="owner_govcdm_itsystemaccreditation" />
   <EntityRelationship Name="owner_govcdm_itsystemcomponent" />
   <EntityRelationship Name="owner_govcdm_itsystemcomponenttype" />
+  <EntityRelationship Name="owner_govcdm_ittechnology" />
+  <EntityRelationship Name="owner_govcdm_ittechnologytype" />
   <EntityRelationship Name="owner_govcdm_itworkassignmentcode" />
   <EntityRelationship Name="team_govcdm_itassignedentitlements" />
   <EntityRelationship Name="team_govcdm_itcomplianceassessment" />
@@ -122,6 +133,8 @@
   <EntityRelationship Name="team_govcdm_itsystemaccreditation" />
   <EntityRelationship Name="team_govcdm_itsystemcomponent" />
   <EntityRelationship Name="team_govcdm_itsystemcomponenttype" />
+  <EntityRelationship Name="team_govcdm_ittechnology" />
+  <EntityRelationship Name="team_govcdm_ittechnologytype" />
   <EntityRelationship Name="team_govcdm_itworkassignmentcode" />
   <EntityRelationship Name="user_govcdm_itassignedentitlements" />
   <EntityRelationship Name="user_govcdm_itcomplianceassessment" />
@@ -138,5 +151,7 @@
   <EntityRelationship Name="user_govcdm_itsystemaccreditation" />
   <EntityRelationship Name="user_govcdm_itsystemcomponent" />
   <EntityRelationship Name="user_govcdm_itsystemcomponenttype" />
+  <EntityRelationship Name="user_govcdm_ittechnology" />
+  <EntityRelationship Name="user_govcdm_ittechnologytype" />
   <EntityRelationship Name="user_govcdm_itworkassignmentcode" />
 </EntityRelationships>

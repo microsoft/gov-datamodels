@@ -5,7 +5,9 @@
             "Environments": {
                 "GOV CDM CORE": "GOV CDM CORE",
                 "GOV CDM UTILITY": "GOV CDM UTILITY",
-                "GOV CDM MODULE": "GOV CDM MODULE"
+                "GOV CDM MODULE": "GOV CDM MODULE",
+                "GOV UTILITY APPS": "GOV UTILITY APPS",
+                "GOV APPS": "GOV APPS"
             }
         },
         "Test": {
@@ -13,7 +15,9 @@
             "Environments": {
                 "GOV CDM CORE": "GOV CDM CORE",
                 "GOV CDM UTILITY": "GOV CDM UTILITY",
-                "GOV CDM MODULE": "GOV CDM MODULE"
+                "GOV CDM MODULE": "GOV CDM MODULE",
+                "GOV UTILITY APPS": "GOV UTILITY APPS",
+                "GOV APPS": "GOV APPS"
             }
         }
     }

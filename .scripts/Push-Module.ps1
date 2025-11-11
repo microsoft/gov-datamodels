@@ -10,8 +10,9 @@ $projectRoot = "$PSScriptRoot\.."
 Write-Host "Warning - This operation will overwrite the unmanaged solution in your environment."
 if ($true -eq (Confirm-Next "Proceed (y/n)?")) {
 
-    # ask which type of ip
-    $ipType = "modules"
+    # Ask user to select module type (modules or cross-module)
+    Write-Host ""
+    $ipType = Select-ModuleType $projectRoot
     $baseFolder = "$projectRoot\$ipType"
 
     # select deployment configuration once at the start
@@ -32,8 +33,10 @@ if ($true -eq (Confirm-Next "Proceed (y/n)?")) {
         $module = Select-ItemFromList $folderNames
 
         if ($module -ne "") {
-            # determine target environment based on module
-            $targetEnv = if ($module -eq "core") {
+            # determine target environment based on module type and specific module
+            $targetEnv = if ($ipType -eq "cross-module") {
+                $deploymentConfig.Environments."GOV CDM UTILITY"
+            } elseif ($module -eq "core") {
                 $deploymentConfig.Environments."GOV CDM CORE"
             } elseif ($module -eq "process-and-tasking") {
                 $deploymentConfig.Environments."GOV CDM UTILITY"

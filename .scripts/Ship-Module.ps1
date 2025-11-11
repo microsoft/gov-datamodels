@@ -26,7 +26,9 @@ Write-Host ""
 Write-Host "Connecting to environment: $targetEnv"
 Connect-DataverseEnvironment -envName $targetEnv
 
-$ipType = "modules"
+# Ask user to select module type (modules or cross-module)
+Write-Host ""
+$ipType = Select-ModuleType $projectRoot
 $baseFolder = "$projectRoot\$ipType"
 
 # Start the loop

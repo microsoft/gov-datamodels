@@ -6,7 +6,7 @@
       <LocalizedName description="Gov CDM - IT Service Management" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.1.1</Version>
+    <Version>1.0.1.2</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>microsoftgovcdm</UniqueName>
@@ -80,6 +80,7 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="1" />
       <RootComponent type="1" schemaName="contact" behavior="1" />
       <RootComponent type="1" schemaName="govcdm_compliancerequirement" behavior="1" />
       <RootComponent type="1" schemaName="govcdm_graderank" behavior="1" />
@@ -98,6 +99,8 @@
       <RootComponent type="1" schemaName="govcdm_itsystemaccreditation" behavior="0" />
       <RootComponent type="1" schemaName="govcdm_itsystemcomponent" behavior="0" />
       <RootComponent type="1" schemaName="govcdm_itsystemcomponenttype" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_ittechnology" behavior="0" />
+      <RootComponent type="1" schemaName="govcdm_ittechnologytype" behavior="0" />
       <RootComponent type="1" schemaName="govcdm_itworkassignmentcode" behavior="0" />
       <RootComponent type="1" schemaName="govcdm_location" behavior="1" />
       <RootComponent type="1" schemaName="govcdm_organizationunit" behavior="1" />
@@ -113,6 +116,7 @@
       <RootComponent type="9" schemaName="govcdm_itsystemaccessaction" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_itsystemaccesslevel" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_itsystemaccessrequesttype" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_ittechnologycategory" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>

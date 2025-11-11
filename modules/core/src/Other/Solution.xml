@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.25093.163" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25093.163" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25094.00171">
+<ImportExportXml version="9.2.25094.171" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25094.171" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25095.00169">
   <SolutionManifest>
     <UniqueName>govcdm_core</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Gov CDM - Core" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.2.3</Version>
+    <Version>1.1.0.0</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>microsoftgovcdm</UniqueName>
@@ -145,6 +145,7 @@
       <RootComponent type="9" schemaName="govcdm_approvalstatus" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_commitmentstatus" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_compliancestatus" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_direction" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_eligibilitystatus" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_employmenttype" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_engagementmode" behavior="0" />
@@ -169,6 +170,7 @@
       <RootComponent type="9" schemaName="govcdm_requeststatus" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_securityclassification" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_severitylevel" behavior="0" />
+      <RootComponent type="9" schemaName="govcdm_simplecertificationstatus" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_submissiontype" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_unitofissue" behavior="0" />
       <RootComponent type="9" schemaName="govcdm_visibility" behavior="0" />

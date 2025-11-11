@@ -1,3 +1,123 @@
+function Wait-ForFileSystemStability {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Path,
+        
+        [Parameter(Mandatory = $false)]
+        [int]$MaxWaitSeconds = 30,
+        
+        [Parameter(Mandatory = $false)]
+        [int]$StabilitySeconds = 5
+    )
+    
+    Write-Host "Waiting for file system stability after build..."
+    
+    $objDebugPath = Join-Path $Path "obj\Debug"
+    $binDebugPath = Join-Path $Path "bin\Debug"
+    
+    $startTime = Get-Date
+    $lastActivity = Get-Date
+    $stableTime = $null
+    
+    while ((Get-Date) -lt $startTime.AddSeconds($MaxWaitSeconds)) {
+        $currentActivity = $false
+        
+        # Check for recent file modifications in obj and bin directories
+        if (Test-Path $objDebugPath) {
+            $recentFiles = Get-ChildItem -Path $objDebugPath -Recurse -File -ErrorAction SilentlyContinue | 
+                          Where-Object { $_.LastWriteTime -gt (Get-Date).AddSeconds(-2) }
+            if ($recentFiles) {
+                $currentActivity = $true
+                $lastActivity = Get-Date
+                $stableTime = $null
+            }
+        }
+        
+        if (Test-Path $binDebugPath) {
+            $recentFiles = Get-ChildItem -Path $binDebugPath -Recurse -File -ErrorAction SilentlyContinue | 
+                          Where-Object { $_.LastWriteTime -gt (Get-Date).AddSeconds(-2) }
+            if ($recentFiles) {
+                $currentActivity = $true
+                $lastActivity = Get-Date
+                $stableTime = $null
+            }
+        }
+        
+        # Check if we have a stable period
+        if (-not $currentActivity) {
+            if ($null -eq $stableTime) {
+                $stableTime = Get-Date
+                Write-Host "File system activity stopped, waiting for stability..." -ForegroundColor Yellow
+            } elseif ((Get-Date) -gt $stableTime.AddSeconds($StabilitySeconds)) {
+                Write-Host "File system is stable. Proceeding..." -ForegroundColor Green
+                return
+            }
+        }
+        
+        Start-Sleep -Milliseconds 500
+        Write-Host "." -NoNewline -ForegroundColor Gray
+    }
+    
+    Write-Host ""
+    Write-Host "File system stability timeout reached. Proceeding with caution..." -ForegroundColor Yellow
+}
+
+function Test-FileInUse {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$FilePath
+    )
+    
+    if (-not (Test-Path $FilePath)) {
+        return $false
+    }
+    
+    try {
+        $fileStream = [System.IO.File]::Open($FilePath, 'Open', 'Write')
+        $fileStream.Close()
+        $fileStream.Dispose()
+        return $false
+    }
+    catch {
+        return $true
+    }
+}
+
+function Get-FileUsingProcesses {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$FilePath
+    )
+    
+    try {
+        # Try using handle.exe if available (from Sysinternals)
+        if (Get-Command "handle" -ErrorAction SilentlyContinue) {
+            $handleOutput = & handle $FilePath 2>$null
+            if ($handleOutput) {
+                Write-Host "Processes using the file:" -ForegroundColor Cyan
+                $handleOutput | ForEach-Object { Write-Host "  $_" -ForegroundColor Gray }
+                return
+            }
+        }
+        
+        # Fallback: check common suspects
+        $suspectProcesses = @("Code", "CodeHelper", "dotnet", "MSBuild", "codeql", "defender")
+        $runningProcesses = Get-Process | Where-Object { 
+            $suspectProcesses -contains $_.ProcessName 
+        } | Select-Object ProcessName, Id, CPU
+        
+        if ($runningProcesses) {
+            Write-Host "Suspect processes that might be locking files:" -ForegroundColor Cyan
+            $runningProcesses | ForEach-Object { 
+                Write-Host "  $($_.ProcessName) (PID: $($_.Id))" -ForegroundColor Gray 
+            }
+        }
+    }
+    catch {
+        Write-Host "Could not determine which processes are using the file." -ForegroundColor Gray
+    }
+}
+
 function Invoke-PythonFunction {
     param (
 
@@ -65,6 +185,48 @@ function Select-ItemFromList {
 
     # Return the selected item
     return $choices[$selection - 1]
+}
+
+function Select-ModuleType {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$projectRoot
+    )
+
+    # Check which module folders exist
+    $availableTypes = @()
+    $typeDescriptions = @()
+    
+    if (Test-Path "$projectRoot\modules") {
+        $availableTypes += "modules"
+        $typeDescriptions += "Use Case Modules (modules folder)"
+    }
+    
+    if (Test-Path "$projectRoot\cross-module") {
+        $availableTypes += "cross-module"
+        $typeDescriptions += "Cross Modules (cross-module folder)"
+    }
+    
+    # If only one type exists, return it automatically
+    if ($availableTypes.Count -eq 1) {
+        Write-Host "Working with $($typeDescriptions[0])..." -ForegroundColor Cyan
+        return $availableTypes[0]
+    }
+    
+    # If both exist, let user choose
+    if ($availableTypes.Count -gt 1) {
+        Write-Host ""
+        Write-Host "Select module type:"
+        $selectedDescription = Select-ItemFromList $typeDescriptions
+        
+        # Return the corresponding folder name
+        $selectedIndex = $typeDescriptions.IndexOf($selectedDescription)
+        return $availableTypes[$selectedIndex]
+    }
+    
+    # If neither exists, default to modules
+    Write-Host "No module folders found, defaulting to 'modules'..." -ForegroundColor Yellow
+    return "modules"
 }
 
 function Select-Environment {
@@ -333,6 +495,68 @@ function Confirm-Next {
     return $false
 }
 
+function Clear-BuildDirectories {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$SolutionPath
+    )
+    
+    $objDebugPath = Join-Path $SolutionPath "obj\Debug"
+    $binDebugPath = Join-Path $SolutionPath "bin\Debug"
+    
+    Write-Host "Ensuring build directories are not locked by background processes..."
+    
+    # Function to safely remove directory with retry logic
+    function Remove-DirectoryWithRetry {
+        param([string]$Path, [string]$Name)
+        
+        if (-not (Test-Path $Path)) {
+            return
+        }
+        
+        $maxRetries = 5
+        $retryCount = 0
+        
+        while ($retryCount -lt $maxRetries) {
+            try {
+                # First, try to unlock any locked files by checking processes
+                if ($retryCount -eq 0) {
+                    Get-FileUsingProcesses $Path
+                }
+                
+                # Try to make all files writable
+                Get-ChildItem -Path $Path -Recurse -Force -ErrorAction SilentlyContinue | 
+                    ForEach-Object { 
+                        try { 
+                            $_.Attributes = $_.Attributes -band (-bnot [System.IO.FileAttributes]::ReadOnly) 
+                        } catch { }
+                    }
+                
+                # Attempt to remove the directory
+                Remove-Item -Path $Path -Recurse -Force -ErrorAction Stop
+                Write-Host "Successfully cleared $Name directory." -ForegroundColor Green
+                return
+            }
+            catch {
+                $retryCount++
+                if ($retryCount -ge $maxRetries) {
+                    Write-Host "Warning: Could not clear $Name directory after $maxRetries attempts. Build may fail." -ForegroundColor Yellow
+                    Write-Host "Error: $($_.Exception.Message)" -ForegroundColor Gray
+                    return
+                }
+                else {
+                    $waitTime = 2 + ($retryCount * 2) # 2s, 4s, 6s, 8s
+                    Write-Host "Failed to clear $Name directory (attempt $retryCount of $maxRetries). Waiting $waitTime seconds..." -ForegroundColor Yellow
+                    Start-Sleep -Seconds $waitTime
+                }
+            }
+        }
+    }
+    
+    # Only try to clear obj\Debug - bin\Debug will be recreated by build
+    Remove-DirectoryWithRetry $objDebugPath "obj\Debug"
+}
+
 function Build-Solution {
     param(
         [Parameter(Mandatory = $true)]
@@ -341,7 +565,66 @@ function Build-Solution {
 
     $originalDir = Get-Location
     Set-Location $SolutionPath
-    dotnet build
+    
+    # Pre-build cleanup to ensure directories are not locked
+    Clear-BuildDirectories $SolutionPath
+    
+    # Try build with retry logic for file lock issues
+    $maxRetries = 3
+    $retryCount = 0
+    $buildSuccessful = $false
+    
+    while (-not $buildSuccessful -and $retryCount -lt $maxRetries) {
+        try {
+            if ($retryCount -gt 0) {
+                Write-Host "Retrying build (attempt $($retryCount + 1) of $maxRetries)..." -ForegroundColor Yellow
+                # Clean up again before retry
+                Clear-BuildDirectories $SolutionPath
+            }
+            
+            # Build with properties to make MSBuild more resilient to file locks
+            dotnet build --verbosity minimal --property:DisableOutOfProcTaskHost=true --property:UseSharedCompilation=false
+            
+            $buildSuccessful = $true
+            Write-Host "Build completed successfully." -ForegroundColor Green
+        }
+        catch {
+            $retryCount++
+            if ($retryCount -ge $maxRetries) {
+                Write-Host "Build failed after $maxRetries attempts. Error: $($_.Exception.Message)" -ForegroundColor Red
+                
+                # Try one final manual cleanup if build keeps failing
+                Write-Host "Attempting manual cleanup of locked directories..." -ForegroundColor Yellow
+                Start-Sleep -Seconds 5
+                Clear-BuildDirectories $SolutionPath
+                
+                # One final build attempt with different settings
+                try {
+                    Write-Host "Final build attempt with different MSBuild settings..." -ForegroundColor Yellow
+                    dotnet build --verbosity quiet --property:DisableOutOfProcTaskHost=true --property:UseSharedCompilation=false --property:BuildInParallel=false
+                    $buildSuccessful = $true
+                    Write-Host "Build completed successfully on final attempt." -ForegroundColor Green
+                }
+                catch {
+                    Write-Host "Final build attempt failed. This appears to be a persistent file locking issue." -ForegroundColor Red
+                    Write-Host "Recommendation: Close VS Code, wait 2-3 minutes for background processes to finish, then try again." -ForegroundColor Yellow
+                    throw
+                }
+            }
+            else {
+                $waitTime = 5 + ($retryCount * 3) # 5s, 8s, 11s
+                Write-Host "Build failed (attempt $retryCount of $maxRetries). Waiting $waitTime seconds before retry..." -ForegroundColor Yellow
+                Write-Host "Error: $($_.Exception.Message)" -ForegroundColor Gray
+                Start-Sleep -Seconds $waitTime
+            }
+        }
+    }
+    
+    # Wait for background processes to release file locks after successful build
+    if ($buildSuccessful) {
+        Wait-ForFileSystemStability $SolutionPath
+    }
+    
     Set-Location $originalDir
 }
 
@@ -381,10 +664,127 @@ function Deploy-Solution {
     Set-Location $SolutionPath
 
     if ($SkipBuild -eq $false) {
-        dotnet build
+        # Pre-build cleanup to ensure directories are not locked
+        Clear-BuildDirectories $SolutionPath
+        
+        # Try build with retry logic for file lock issues
+        $maxBuildRetries = 3
+        $buildRetryCount = 0
+        $buildSuccessful = $false
+        
+        while (-not $buildSuccessful -and $buildRetryCount -lt $maxBuildRetries) {
+            try {
+                if ($buildRetryCount -gt 0) {
+                    Write-Host "Retrying build (attempt $($buildRetryCount + 1) of $maxBuildRetries)..." -ForegroundColor Yellow
+                    # Clean up again before retry
+                    Clear-BuildDirectories $SolutionPath
+                }
+                
+                # Build with properties to make MSBuild more resilient to file locks
+                dotnet build --verbosity minimal --property:DisableOutOfProcTaskHost=true --property:UseSharedCompilation=false
+                
+                $buildSuccessful = $true
+                Write-Host "Build completed successfully." -ForegroundColor Green
+            }
+            catch {
+                $buildRetryCount++
+                if ($buildRetryCount -ge $maxBuildRetries) {
+                    Write-Host "Build failed after $maxBuildRetries attempts." -ForegroundColor Red
+                    
+                    # Try one final manual cleanup if build keeps failing
+                    Write-Host "Attempting manual cleanup of locked directories..." -ForegroundColor Yellow
+                    Start-Sleep -Seconds 5
+                    Clear-BuildDirectories $SolutionPath
+                    
+                    # One final build attempt with different settings
+                    try {
+                        Write-Host "Final build attempt with different MSBuild settings..." -ForegroundColor Yellow
+                        dotnet build --verbosity quiet --property:DisableOutOfProcTaskHost=true --property:UseSharedCompilation=false --property:BuildInParallel=false
+                        $buildSuccessful = $true
+                        Write-Host "Build completed successfully on final attempt." -ForegroundColor Green
+                    }
+                    catch {
+                        Write-Host "Final build attempt failed. This appears to be a persistent file locking issue." -ForegroundColor Red
+                        Write-Host "Recommendation: Close VS Code, wait 2-3 minutes for background processes to finish, then try again." -ForegroundColor Yellow
+                        throw
+                    }
+                }
+                else {
+                    $waitTime = 5 + ($buildRetryCount * 3) # 5s, 8s, 11s
+                    Write-Host "Build failed (attempt $buildRetryCount of $maxBuildRetries). Waiting $waitTime seconds before retry..." -ForegroundColor Yellow
+                    Write-Host "Error: $($_.Exception.Message)" -ForegroundColor Gray
+                    Start-Sleep -Seconds $waitTime
+                }
+            }
+        }
+        
+        # Wait for file system stability after successful build
+        if ($buildSuccessful) {
+            Wait-ForFileSystemStability $SolutionPath
+        }
     }
 
-    pac solution import --path $path
+    # Check if solution file is accessible before attempting import
+    $solutionFile = Join-Path $SolutionPath $path
+    
+    # Retry logic for solution import in case of file locking issues
+    $maxRetries = 5
+    $retryCount = 0
+    $importSuccessful = $false
+    
+    while (-not $importSuccessful -and $retryCount -lt $maxRetries) {
+        # Check if the solution file is in use
+        if (Test-FileInUse $solutionFile) {
+            Write-Host "Solution file is currently in use by another process (attempt $($retryCount + 1) of $maxRetries)..." -ForegroundColor Yellow
+            if ($retryCount -eq 0) {
+                Get-FileUsingProcesses $solutionFile
+            }
+            Start-Sleep -Seconds (3 + $retryCount * 2) # 3s, 5s, 7s, 9s, 11s
+            $retryCount++
+            continue
+        }
+        
+        try {
+            if ($retryCount -gt 0) {
+                Write-Host "Retrying solution import (attempt $($retryCount + 1) of $maxRetries)..."
+            }
+            
+            # Additional check: ensure parent directories are not locked
+            $parentDir = Split-Path $solutionFile -Parent
+            if (Test-Path $parentDir) {
+                $testFile = Join-Path $parentDir "test_lock_$(Get-Random).tmp"
+                try {
+                    [System.IO.File]::WriteAllText($testFile, "test")
+                    Remove-Item $testFile -Force -ErrorAction SilentlyContinue
+                }
+                catch {
+                    Write-Host "Parent directory appears to be locked. Waiting..." -ForegroundColor Yellow
+                    Start-Sleep -Seconds 5
+                    $retryCount++
+                    continue
+                }
+            }
+            
+            pac solution import --path $path
+            $importSuccessful = $true
+            Write-Host "Solution import completed successfully." -ForegroundColor Green
+        }
+        catch {
+            $retryCount++
+            if ($retryCount -ge $maxRetries) {
+                Write-Host "Failed to import solution after $maxRetries attempts. Error: $($_.Exception.Message)" -ForegroundColor Red
+                Write-Host "This may be due to persistent file locks from background processes like CodeQL, Windows Defender, or other scanning tools." -ForegroundColor Red
+                Write-Host "Try closing VS Code, waiting a few minutes, and running the script again." -ForegroundColor Yellow
+                throw
+            }
+            else {
+                $waitTime = 5 + ($retryCount * 3) # 5s, 8s, 11s, 14s
+                Write-Host "Solution import failed (attempt $retryCount of $maxRetries). Waiting $waitTime seconds before retry..." -ForegroundColor Yellow
+                Write-Host "Error: $($_.Exception.Message)" -ForegroundColor Gray
+                Start-Sleep -Seconds $waitTime
+            }
+        }
+    }
     # pac solution import --path $path -up
     # pac solution import --path $path --force-overwrite # will overwrite unamanged changes (not recommended)
     # use -cm to convert unmanaged components to managed

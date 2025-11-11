@@ -66,7 +66,7 @@ do {
 
             # Process-and-tasking deploys to downstream environments only (not GOV CDM MODULE which is source)
             pac org select --environment $deploymentConfig.Environments."GOV UTILITY APPS"
-            Deploy-Solution "$baseFolder\$module" -Managed -SkipBuild -AutoConfirm # build the first time!
+            Deploy-Solution "$baseFolder\$module" -Managed -SkipBuild -AutoConfirm
 
             pac org select --environment $deploymentConfig.Environments."GOV APPS"
             Deploy-Solution "$baseFolder\$module" -Managed -SkipBuild -AutoConfirm
@@ -74,7 +74,7 @@ do {
         else {
             # Regular modules deploy to downstream environments only
             pac org select --environment $deploymentConfig.Environments."GOV APPS"
-            Deploy-Solution "$baseFolder\$module" -Managed -SkipBuild -AutoConfirm
+            Deploy-Solution "$baseFolder\$module" -Managed -AutoConfirm # build the first time!
         }
 
         Write-Host ""

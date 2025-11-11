@@ -13,28 +13,27 @@
 $projectRoot = Join-Path $PSScriptRoot ".."
 . (Join-Path $projectRoot ".scripts\Util.ps1")
 
-function Get-NewFileName ($originalName, $newVersion, $moduleName) {
+function Get-NewFileName ($originalName, $newVersion, $solutionName) {
     if (-not [string]::IsNullOrEmpty($newVersion)) {
         $extension = [System.IO.Path]::GetExtension($originalName)
         
-        # Convert module name to title case for consistent formatting
-        $formattedModuleName = (Get-Culture).TextInfo.ToTitleCase($moduleName.ToLower())
-        $formattedModuleName = $formattedModuleName -replace '-', '-'  # Keep hyphens as-is
+        # Extract the module name from the solution name (remove "Gov-CDM-" prefix)
+        $moduleName = $solutionName -replace '^Gov-CDM-', ''
         
         # Check if this is a managed solution
         if ($originalName -like "*_managed*") {
-            return "MSGov-DataModels-{0}_managed - {1}{2}" -f $formattedModuleName, $newVersion, $extension
+            return "MSGov-DataModels-{0}_managed - {1}{2}" -f $moduleName, $newVersion, $extension
         } else {
-            return "MSGov-DataModels-{0} - {1}{2}" -f $formattedModuleName, $newVersion, $extension
+            return "MSGov-DataModels-{0} - {1}{2}" -f $moduleName, $newVersion, $extension
         }
     }
     return $originalName
 }
 
-function Copy-SolutionArtifact($sourceArtifact, $newVersion, $moduleName) {
+function Copy-SolutionArtifact($sourceArtifact, $newVersion, $solutionName) {
 
     $sourceFile = Join-Path $artifactFolder $sourceArtifact
-    $targetFile = Get-NewFileName $sourceFile $newVersion $moduleName
+    $targetFile = Get-NewFileName $sourceFile $newVersion $solutionName
 
     $versionFolder = Join-Path -Path $releasesFolder -ChildPath "v$newVersion"
     $destinationPath = Join-Path -Path $versionFolder -ChildPath $targetFile
@@ -146,8 +145,8 @@ if (-not (Test-Path $versionFolder)) {
 }
 
 # Copy the files
-Copy-SolutionArtifact "${solutionName}.zip" $newVersion $module
-Copy-SolutionArtifact "${solutionName}_managed.zip" $newVersion $module
+Copy-SolutionArtifact "${solutionName}.zip" $newVersion $solutionName
+Copy-SolutionArtifact "${solutionName}_managed.zip" $newVersion $solutionName
 
 # document the module
 # & "${PSScriptRoot}/../.venv/Scripts/python.exe" "${PSScriptRoot}/create_erd.py" $module

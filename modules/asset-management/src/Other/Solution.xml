@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.24032.208" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.25094.171" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25094.171" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25101.00163">
   <SolutionManifest>
     <UniqueName>govcdm_assetmanagement</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Gov CDM - Asset Management" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.2</Version>
+    <Version>1.0.0.3</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>microsoftgovcdm</UniqueName>
@@ -87,34 +87,32 @@
       <RootComponent type="1" schemaName="govcdm_assetowner" behavior="0" />
       <RootComponent type="1" schemaName="govcdm_assetservicerecord" behavior="0" />
       <RootComponent type="1" schemaName="govcdm_location" behavior="1" />
+      <RootComponent type="1" schemaName="govcdm_organizationunit" behavior="1" />
+      <RootComponent type="9" schemaName="govcdm_assetstatus" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.0.4)" />
+        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.1.0.0)" />
         <Dependent type="1" schemaName="govcdm_location" displayName="Location" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="govcdm_location" displayName="Location" solution="govcdm_core (1.0.0.4)" />
+        <Required type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" solution="govcdm_core (1.1.0.0)" />
+        <Dependent type="1" schemaName="govcdm_organizationunit" displayName="Organization Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.1.0.0)" />
+        <Dependent type="10" schemaName="govcdm_asset_Location_govcdm_location" displayName="govcdm_asset_Location_govcdm_location" parentSchemaName="govcdm_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.1.0.0)" />
         <Dependent type="10" schemaName="govcdm_govcdm_assetservicerecord_ServiceLocation" displayName="govcdm_govcdm_assetservicerecord_ServiceLocation" parentSchemaName="govcdm_location" parentDisplayName="Location" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="govcdm_product" displayName="Product" solution="govcdm_core (1.0.0.4)" />
-        <Dependent type="10" schemaName="govcdm_govcdm_asset_RelatedProduct_govcdm_produc" displayName="govcdm_govcdm_asset_RelatedProduct_govcdm_produc" parentSchemaName="govcdm_product" parentDisplayName="Product" />
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" solution="govcdm_core (1.1.0.0)" />
+        <Dependent type="10" schemaName="govcdm_asset_OrganizationUnit_govcdm_organizationunit" displayName="govcdm_asset_OrganizationUnit_govcdm_organizationunit" parentSchemaName="govcdm_organizationunit" parentDisplayName="Organization Unit" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="govcdm_locationid" displayName="Location" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.0.4)" />
-        <Dependent type="10" schemaName="govcdm_govcdm_assetservicerecord_ServiceLocation" displayName="govcdm_govcdm_assetservicerecord_ServiceLocation" parentSchemaName="govcdm_location" parentDisplayName="Location" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_location" parentDisplayName="Location" solution="govcdm_core (1.0.0.4)" />
-        <Dependent type="10" schemaName="govcdm_govcdm_assetservicerecord_ServiceLocation" displayName="govcdm_govcdm_assetservicerecord_ServiceLocation" parentSchemaName="govcdm_location" parentDisplayName="Location" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_product" parentDisplayName="Product" solution="govcdm_core (1.0.0.4)" />
-        <Dependent type="10" schemaName="govcdm_govcdm_asset_RelatedProduct_govcdm_produc" displayName="govcdm_govcdm_asset_RelatedProduct_govcdm_produc" parentSchemaName="govcdm_product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="2" schemaName="govcdm_productid" displayName="Product" parentSchemaName="govcdm_product" parentDisplayName="Product" solution="govcdm_core (1.0.0.4)" />
+        <Required type="2" schemaName="govcdm_name" displayName="Name" parentSchemaName="govcdm_product" parentDisplayName="Product" solution="govcdm_core (1.1.0.0)" />
         <Dependent type="10" schemaName="govcdm_govcdm_asset_RelatedProduct_govcdm_produc" displayName="govcdm_govcdm_asset_RelatedProduct_govcdm_produc" parentSchemaName="govcdm_product" parentDisplayName="Product" />
       </MissingDependency>
     </MissingDependencies>

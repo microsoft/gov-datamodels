@@ -4,6 +4,8 @@
   <EntityRelationship Name="business_unit_govcdm_assetcategory" />
   <EntityRelationship Name="business_unit_govcdm_assetowner" />
   <EntityRelationship Name="business_unit_govcdm_assetservicerecord" />
+  <EntityRelationship Name="govcdm_asset_Location_govcdm_location" />
+  <EntityRelationship Name="govcdm_asset_OrganizationUnit_govcdm_organizationunit" />
   <EntityRelationship Name="govcdm_govcdm_asset_AssetCategory_govcdm_assetca" />
   <EntityRelationship Name="govcdm_govcdm_asset_CurrentOwner_govcdm_assetown" />
   <EntityRelationship Name="govcdm_govcdm_asset_ParentAsset_govcdm_asset" />
@@ -29,6 +31,7 @@
   <EntityRelationship Name="team_govcdm_assetcategory" />
   <EntityRelationship Name="team_govcdm_assetowner" />
   <EntityRelationship Name="team_govcdm_assetservicerecord" />
+  <EntityRelationship Name="TransactionCurrency_govcdm_Asset" />
   <EntityRelationship Name="user_govcdm_asset" />
   <EntityRelationship Name="user_govcdm_assetcategory" />
   <EntityRelationship Name="user_govcdm_assetowner" />

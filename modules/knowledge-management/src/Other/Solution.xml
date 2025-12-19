@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.25061.220" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25061.220" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25061.00220">
+<ImportExportXml version="9.2.25111.174" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25111.174" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25111.00174">
   <SolutionManifest>
     <UniqueName>govcdm_knowledgemanagement</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Gov CDM - Knowledge Management" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.1.1</Version>
+    <Version>1.0.2.0</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>microsoftgovcdm</UniqueName>
@@ -19,7 +19,7 @@
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
       <CustomizationPrefix>govcdm</CustomizationPrefix>
-      <CustomizationOptionValuePrefix>16684</CustomizationOptionValuePrefix>
+      <CustomizationOptionValuePrefix>93392</CustomizationOptionValuePrefix>
       <Addresses>
         <Address>
           <AddressNumber>1</AddressNumber>
@@ -92,11 +92,11 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="9" schemaName="govcdm_publicationstatus" displayName="Publication Status" solution="govcdm_core (1.0.2.1)" />
+        <Required type="9" schemaName="govcdm_publicationstatus" displayName="Publication Status" solution="govcdm_core (1.1.0.0)" />
         <Dependent type="2" schemaName="govcdm_publicationstatus" displayName="Publication Status" parentSchemaName="govcdm_kmcatalogitem" parentDisplayName="KM Catalog Item" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="9" schemaName="govcdm_publicationstatus" displayName="Publication Status" solution="govcdm_core (1.0.2.1)" />
+        <Required type="9" schemaName="govcdm_publicationstatus" displayName="Publication Status" solution="govcdm_core (1.1.0.0)" />
         <Dependent type="2" schemaName="govcdm_publicationstatus" displayName="Publication Status" parentSchemaName="govcdm_kmcatalogitemrelation" parentDisplayName="KM Catalog Item Relation" />
       </MissingDependency>
     </MissingDependencies>
